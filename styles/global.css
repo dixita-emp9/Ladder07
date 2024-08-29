@@ -1,0 +1,396 @@
+/*==========Common CSS ==========*/
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html,
+body {
+  overflow-x: hidden;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+:root {
+  --primary_color: #a67f28;
+  --secondary_color: #524633;
+  --gold_color: #ffdb6b;
+  --light_gold_color: #fff5d5;
+  --header_height: 104px;
+  --black_color: #000000;
+  --body_bg: #ffffff;
+  --white_color: #ffffff;
+  --input_color: #524633;
+  --border_color: #dee0e2;
+  --container_space: clamp(30px, 6vw, 120px);
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  color: var(--secondary_color);
+  background-color: var(--body_bg);
+  text-rendering: optimizeSpeed;
+  font-size: 25px;
+  line-height: 31px;
+}
+
+button,
+input,
+select,
+optgroup,
+textarea {
+  color: var(--secondary_color);
+  font-size: 25px;
+  line-height: 31px;
+  font-family: "Poppins", sans-serif;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+section,
+footer {
+  position: relative;
+}
+
+.sec_wp {
+  position: relative;
+  z-index: 4;
+}
+
+.wow {
+  visibility: hidden;
+}
+
+.for_des {
+  display: block !important;
+}
+
+.for_mob {
+  display: none !important;
+}
+
+.for_des_flex {
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+}
+
+.for_mob_flex {
+  display: none !important;
+}
+
+.back_img {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.container-fluid {
+  padding: 0 var(--container_space);
+}
+
+.outline_text {
+  color: transparent !important;
+  -webkit-text-stroke: 0.5px #fff;
+}
+
+.container {
+  max-width: 1568px;
+  padding-inline: 13px;
+  margin: 0 auto;
+}
+
+.text_center {
+  text-align: center;
+}
+
+/*==========Common CSS End==========*/
+
+
+/*==========Form CSS==========*/
+.form_input_2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 21px;
+}
+
+.form_input_wp {
+  display: block;
+  margin-bottom: 18px;
+  position: relative;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.form_input::-webkit-input-placeholder {
+  color: var(--input_color);
+}
+
+.form_input::-moz-placeholder {
+  color: var(--input_color);
+}
+
+.form_input:-ms-input-placeholder {
+  color: var(--input_color);
+}
+
+.form_input::-ms-input-placeholder {
+  color: var(--input_color);
+}
+
+.form_input::placeholder {
+  color: var(--input_color);
+}
+
+select {
+  color: var(--input_color) !important;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+}
+select::-ms-expand {
+  display: none;
+}
+select option {
+  color: var(--black_color) !important;
+}
+
+.form_input,
+select {
+  width: 100%;
+  height: 101px;
+  outline: none !important;
+  padding: 0 52px;
+  color: var(--secondary_color);
+  -webkit-appearance: none;
+  background: rgba(255, 255, 255, 0.36);
+  border: 2px solid rgba(82, 70, 51, 0.09);
+  border-radius: 100vmax;
+  font-weight: 300;
+  letter-spacing: -0.05em;
+}
+
+textarea.form-input {
+  height: 192px;
+  resize: none;
+  padding: 18px 30px;
+  display: block;
+}
+
+.checkbox_input_wp {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 35px;
+  margin-top: 56px;
+  cursor: pointer;
+}
+.checkbox_input_wp label {
+  font-size: 20px;
+  font-weight: 300;
+  letter-spacing: -0.05em;
+  cursor: pointer;
+}
+
+input[type=checkbox],
+input[type=radio] {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto;
+  width: 46px;
+  height: 46px;
+  margin: 0;
+  outline: none !important;
+  overflow: hidden;
+  background: var(--secondary_color);
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  -webkit-appearance: none;
+  position: relative;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+input[type=radio],
+input[type=checkbox] {
+  border-radius: 50%;
+}
+
+input[type=checkbox]:before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 16px;
+  height: 16px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: var(--gold_color);
+  -webkit-transform: translate(-50%, -50%) scale(0);
+          transform: translate(-50%, -50%) scale(0);
+  border-radius: 50%;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  -webkit-transform-origin: center;
+          transform-origin: center;
+}
+
+input[type=checkbox]:checked::before {
+  -webkit-transform: translate(-50%, -50%) scale(1);
+          transform: translate(-50%, -50%) scale(1);
+}
+
+input[type=radio]:checked::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background: var(--primary_color);
+  border: 3px solid var(--white_color);
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  opacity: 0;
+}
+
+.form_element {
+  position: relative;
+}
+.form_element .form_input {
+  padding-right: 100px;
+}
+.form_element img {
+  position: absolute;
+  top: 50%;
+  right: 48px;
+  pointer-events: none;
+  color: var(--primary_color);
+  width: 28px;
+  -webkit-transform: translate(0, -50%);
+          transform: translate(0, -50%);
+}
+
+.form_submit {
+  margin-top: 130px;
+}
+.form_submit .sec_btn {
+  width: 296px;
+  gap: 30px;
+}
+
+/*==========Form CSS End==========*/
+/*==========Typography CSS==========*/
+p {
+  font-size: 25px;
+  line-height: 31px;
+  color: var(--secondary_color);
+}
+p:empty {
+  display: none;
+}
+
+a {
+  text-decoration: none !important;
+  outline: none !important;
+  color: var(--black_color);
+}
+a:hover {
+  color: initial;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 500;
+}
+
+.h1_title span,
+.h2_title span,
+.h3_title span,
+.h4_title span,
+.h5_title span,
+.h6_title span {
+  display: block;
+}
+
+.h1_title {
+  font-size: 150px;
+  line-height: 0.925;
+}
+
+.h2_title {
+  margin-bottom: 15px;
+  position: relative;
+  font-size: 75px;
+  line-height: 1.1;
+  font-weight: 600;
+}
+
+.h3_title {
+  font-size: 50px;
+  line-height: 1.4;
+}
+
+.h4_title {
+  font-size: 30px;
+}
+
+.sub_title {
+  font-size: 30px;
+  line-height: 0.925;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+ul,
+ol {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.outline_text {
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke: 1px;
+  -webkit-text-stroke-color: var(--black_color);
+}
+
+.gradient_title {
+  background: -webkit-gradient(linear, left top, right top, color-stop(5%, var(--secondary_color)), color-stop(90%, var(--gold_color)));
+  background: linear-gradient(90deg, var(--secondary_color) 5%, var(--gold_color) 90%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/*==========Typography CSS End==========*/

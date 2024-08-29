@@ -1,0 +1,14 @@
+// Global Scss
+@import "./global/variables";
+@import "./global/font";
+@import "./global/mixin";
+@import "./global/space";
+
+// Common scss
+@import "./common/common";
+@import "./common/header";
+@import "./common/footer";
+
+// Page scss
+@import "./pages/home";
+@import "./pages/about";

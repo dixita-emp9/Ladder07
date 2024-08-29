@@ -1,0 +1,213 @@
+/*==========Footer CSS==========*/
+
+.site_footer {
+	background: #fff5d6;
+	padding-block: 115px 60px;
+	overflow: hidden;
+
+	.footer_shape {
+		--position: 75%;
+		img {
+			position: absolute;
+			left: var(--position);
+			bottom: -55px;
+			pointer-events: none;
+			max-width: 690px;
+
+			&.footer_left_shape {
+				left: auto;
+				right: var(--position);
+				transform: scale(-1, 1);
+			}
+		}
+	}
+
+	.site_footer_top {
+		display: flex;
+		gap: 30px;
+		border-bottom: 1px solid var(--primary_color);
+		padding-bottom: 70px;
+
+		.site_footer_about_wp {
+			flex: auto;
+			.site_footer_about {
+				max-width: 365px;
+				.logo {
+					display: inline-flex;
+					max-width: 175px;
+					margin-bottom: 86px;
+				}
+
+				p {
+					font-size: 20px;
+					line-height: 1.5;
+					font-weight: 300;
+				}
+
+				.footer_social {
+					margin-top: 12px;
+					ul {
+						display: flex;
+						gap: 20px;
+						li {
+							a {
+								display: flex;
+								width: 47px;
+								height: 47px;
+								justify-content: center;
+								align-items: center;
+								background: rgba(255, 248, 228, 0.16);
+								border: 1px solid rgba(82, 70, 51, 0.16);
+								backdrop-filter: blur(11.7px);
+								border-radius: 50%;
+
+								&:hover {
+									background: rgba(255, 248, 228, 1);
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+
+		.footer_menu {
+			flex: 0 0 28%;
+			max-width: 28%;
+			margin-top: 55px;
+
+			h5 {
+				font-size: 35px;
+				font-weight: 500;
+				letter-spacing: -0.05em;
+				color: var(--primary_color);
+				margin-bottom: 87px;
+			}
+
+			ul {
+				li {
+					margin-bottom: 15px;
+
+					a {
+						display: flex;
+						align-items: flex-start;
+						font-size: 17px;
+						font-weight: 200;
+						letter-spacing: -0.02em;
+						gap: 20px;
+
+						&:hover {
+							color: var(--primary_color);
+						}
+
+						img {
+							width: 28px;
+						}
+					}
+				}
+			}
+		}
+	}
+
+	.site_footer_bottom {
+		.site_footer_copyright {
+			display: flex;
+			gap: 78px;
+			margin-top: 26px;
+
+			p {
+				font-size: 14px;
+				font-weight: 200;
+				letter-spacing: -0.005em;
+			}
+
+			ul {
+				display: flex;
+				gap: 12px;
+
+				li {
+					display: flex;
+					position: relative;
+					gap: 12px;
+
+					&:not(:last-child) {
+						&:after {
+							content: "|";
+							font-size: 14px;
+							font-weight: 300;
+						}
+					}
+
+					a {
+						font-size: 14px;
+						font-weight: 200;
+						letter-spacing: -0.005em;
+						transition: 0.3s;
+
+						&:hover {
+							color: var(--primary_color);
+						}
+					}
+				}
+			}
+		}
+
+		.site_footer_bottom_content {
+			margin-top: 64px;
+
+			p {
+				font-weight: 300;
+				font-size: 14px;
+				line-height: 180%;
+				letter-spacing: -0.05em;
+			}
+		}
+
+		.site_footer_bottom_partner {
+			display: flex;
+			justify-content: space-between;
+			margin-top: 70px;
+			gap: 30px;
+
+			.h3_title {
+				font-weight: 600;
+				max-width: 570px;
+				line-height: 1;
+				background: linear-gradient(95.63deg, #ffdb6b 1.61%, #524633 105.02%);
+				-webkit-background-clip: text;
+				-webkit-text-fill-color: transparent;
+				background-clip: text;
+				text-fill-color: transparent;
+			}
+
+			.site_footer_bottom_partner_list_wp {
+				display: flex;
+				gap: 80px;
+				align-items: center;
+
+				.site_footer_bottom_partner_list {
+					display: flex;
+					align-items: center;
+					gap: 30px;
+
+					p {
+						font-weight: 200;
+						font-size: 14px;
+						letter-spacing: -0.05em;
+					}
+
+					ul {
+						display: flex;
+						align-items: center;
+						gap: 30px;
+						li {
+							display: flex;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+/*==========Footer CSS End==========*/

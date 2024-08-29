@@ -1,0 +1,68 @@
+/*==========Header CSS==========*/
+
+.site_header {
+	background: var(--white_color);
+	height: var(--header_height);
+	display: flex;
+	align-items: center;
+
+	.container {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		gap: 15px;
+		width: 100%;
+	}
+
+	.site_logo {
+		a {
+			display: flex;
+		}
+	}
+
+	.header_menu {
+		@include align_center(center);
+
+		ul {
+			@include list_item(20) {
+				color: var(--black_color);
+				font-weight: 500;
+				position: relative;
+				@include flex_center(unset, center);
+				text-transform: capitalize;
+				font-family: $power_grotesk;
+				color: var(--primary_color);
+				gap: 7px;
+				font-size: 20px;
+
+				&:hover,
+				&.active {
+					color: var(--black_color);
+				}
+
+				&:hover {
+					.badge {
+						background-color: var(--secondary_color);
+						color: var(--white_color);
+					}
+				}
+
+				.badge {
+					background: var(--gold_color);
+					font-size: 10px;
+					padding: 0 10px;
+					height: 28px;
+					display: flex;
+					border-radius: 100vmax;
+					line-height: 1;
+					align-items: center;
+					color: var(--secondary_color);
+					transition: 0.3s;
+					font-family: $poppins;
+				}
+			}
+		}
+	}
+}
+
+/*==========Header CSS End==========*/

@@ -1,0 +1,552 @@
+/*==========Common CSS ==========*/
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html,
+body {
+	overflow-x: hidden;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+:root {
+	--primary_color: #a67f28;
+	--secondary_color: #524633;
+	--gold_color: #ffdb6b;
+	--light_gold_color: #fff5d5;
+	--header_height: 104px;
+	--black_color: #000000;
+	--body_bg: #ffffff;
+	--white_color: #ffffff;
+	--input_color: #524633;
+	--border_color: #dee0e2;
+	--container_space: clamp(30px, 6vw, 120px);
+}
+
+body {
+	font-family: 'poppins';
+	color: var(--secondary_color);
+	background-color: var(--body_bg);
+	text-rendering: optimizeSpeed;
+	font-size: 25px;
+	line-height: 31px;
+}
+
+button,
+input,
+select,
+optgroup,
+textarea {
+	color: var(--secondary_color);
+	font-size: 25px;
+	line-height: 31px;
+	font-family: 'poppins';
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+section,
+footer {
+	position: relative;
+}
+
+.sec_wp {
+	position: relative;
+	z-index: 4;
+}
+
+.wow {
+	visibility: hidden;
+}
+
+.for_des {
+	display: block !important;
+}
+
+.for_mob {
+	display: none !important;
+}
+
+.for_des_flex {
+	display: flex !important;
+}
+
+.for_mob_flex {
+	display: none !important;
+}
+
+.back_img {
+	//@include back_img;
+}
+
+.container-fluid {
+	padding: 0 var(--container_space);
+}
+
+.outline_text {
+	color: transparent !important;
+	-webkit-text-stroke: 0.5px #fff;
+}
+
+.container {
+	max-width: 1568px;
+	padding-inline: 13px;
+	margin: 0 auto;
+}
+
+.text_center {
+	text-align: center;
+}
+/*==========Common CSS End==========*/
+
+/*==========Slider CSS==========*/
+
+.swiper-pagination {
+	position: unset;
+	padding-inline: 20px;
+	margin-top: 70px;
+
+	.swiper-pagination-bullet {
+		position: relative;
+		width: 102px;
+		border-radius: 100vmax;
+		opacity: 1;
+		margin-inline: 5px;
+		background: rgba(220, 209, 193, 0.6);
+		height: 9px;
+		overflow: hidden;
+
+		b {
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			z-index: 2;
+			width: 0%;
+			height: 100%;
+			border-radius: 100vmax;
+			background-color: var(--secondary_color);
+		}
+
+		&.swiper-pagination-bullet-active {
+			b {
+				animation-name: countingBar;
+				animation-duration: 3s;
+				animation-timing-function: ease-in;
+				animation-iteration-count: 1;
+				animation-direction: alternate;
+				animation-fill-mode: forwards;
+			}
+		}
+	}
+
+	@keyframes countingBar {
+		0% {
+			width: 0;
+		}
+		100% {
+			width: 100%;
+		}
+	}
+}
+
+.swiper_button {
+	display: flex;
+	justify-content: center;
+	gap: 30px;
+	margin-top: 60px;
+
+	button {
+		all: revert;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 70px;
+		height: 70px;
+		cursor: pointer;
+		background: rgba(166, 127, 40, 0.27);
+		border: 1px solid rgba(255, 219, 107, 0.19);
+		backdrop-filter: blur(2px);
+		border-radius: 32px;
+		transition: 0.3s;
+
+		&:hover {
+			background: var(--secondary_color);
+
+			img {
+				filter: brightness(0) invert(1);
+			}
+		}
+
+		img {
+			width: 28px;
+			transition: 0.3s;
+		}
+
+		&:after {
+			display: none;
+		}
+
+		&.swiper-button-prev {
+			transform: scale(-1, 1);
+		}
+	}
+}
+
+/*==========Slider CSS End==========*/
+
+/*==========Form CSS==========*/
+
+.form_input_2 {
+	display: flex;
+	gap: 21px;
+}
+
+.form_input_wp {
+	display: block;
+	margin-bottom: 18px;
+	position: relative;
+	flex: 1;
+}
+
+.form_input::-webkit-input-placeholder {
+	color: var(--input_color);
+}
+
+.form_input::-moz-placeholder {
+	color: var(--input_color);
+}
+
+.form_input:-ms-input-placeholder {
+	color: var(--input_color);
+}
+
+.form_input::-ms-input-placeholder {
+	color: var(--input_color);
+}
+
+.form_input::placeholder {
+	color: var(--input_color);
+}
+
+select {
+	color: var(--input_color) !important;
+	-moz-appearance: none;
+	-webkit-appearance: none;
+	&::-ms-expand {
+		display: none;
+	}
+	option {
+		color: var(--black_color) !important;
+	}
+}
+
+.form_input,
+select {
+	width: 100%;
+	height: 101px;
+	outline: none !important;
+	padding: 0 52px;
+	color: var(--secondary_color);
+	-webkit-appearance: none;
+	background: rgba(255, 255, 255, 0.36);
+	border: 2px solid rgba(82, 70, 51, 0.09);
+	border-radius: 100vmax;
+	font-weight: 300;
+	letter-spacing: -0.05em;
+}
+
+textarea.form-input {
+	height: 192px;
+	resize: none;
+	padding: 18px 30px;
+	display: block;
+}
+
+.checkbox_input_wp {
+	display: flex;
+	gap: 35px;
+	margin-top: 56px;
+	cursor: pointer;
+
+	label {
+		font-size: 20px;
+		font-weight: 300;
+		letter-spacing: -0.05em;
+		cursor: pointer;
+	}
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+	flex: 0 0 auto;
+	width: 46px;
+	height: 46px;
+	margin: 0;
+	outline: none !important;
+	overflow: hidden;
+	background: var(--secondary_color);
+	box-shadow: none;
+	-webkit-appearance: none;
+	position: relative;
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 3px;
+	cursor: pointer;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+	border-radius: 50%;
+}
+
+input[type="checkbox"]:before {
+	content: "";
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 16px;
+	height: 16px;
+	//@include flex_center(center, center);
+	background: var(--gold_color);
+	transform: translate(-50%, -50%) scale(0);
+	border-radius: 50%;
+	transition: 0.3s;
+	transform-origin: center;
+}
+
+input[type="checkbox"]:checked::before {
+	transform: translate(-50%, -50%) scale(1);
+}
+
+input[type="radio"]:checked::before {
+	//@include after_before();
+	border-radius: 50%;
+	background: var(--primary_color);
+	border: 3px solid var(--white_color);
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+	opacity: 0;
+}
+
+.form_element {
+	position: relative;
+
+	.form_input {
+		padding-right: 100px;
+	}
+
+	img {
+		position: absolute;
+		top: 50%;
+		right: 48px;
+		pointer-events: none;
+		color: var(--primary_color);
+		width: 28px;
+		transform: translate(0, -50%);
+	}
+}
+
+.form_submit {
+	margin-top: 130px;
+	.sec_btn {
+		width: 296px;
+		gap: 30px;
+	}
+}
+
+/*==========Form CSS End==========*/
+
+/*==========Typography CSS==========*/
+
+p {
+	font-size: 25px;
+	line-height: 31px;
+	color: var(--secondary_color);
+
+	&:empty {
+		display: none;
+	}
+}
+
+a {
+	text-decoration: none !important;
+	outline: none !important;
+	color: var(--black_color);
+
+	&:hover {
+		color: initial;
+	}
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-weight: 500;
+}
+
+.h1_title,
+.h2_title,
+.h3_title,
+.h4_title,
+.h5_title,
+.h6_title {
+	span {
+		display: block;
+	}
+}
+
+.h1_title {
+	font-size: 150px;
+	line-height: 0.925;
+}
+
+.h2_title {
+	margin-bottom: 15px;
+	position: relative;
+	font-size: 75px;
+	line-height: 1.1;
+	font-weight: 600;
+}
+
+.h3_title {
+	font-size: 50px;
+	line-height: 1.4;
+}
+
+.h4_title {
+	font-size: 30px;
+}
+
+.sub_title {
+	font-size: 30px;
+	line-height: 0.925;
+	font-weight: 400;
+	text-transform: uppercase;
+}
+
+ul,
+ol {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.outline_text {
+	-webkit-text-fill-color: transparent;
+	-webkit-text-stroke: 1px;
+	-webkit-text-stroke-color: var(--black_color);
+}
+
+.gradient_title {
+	background: linear-gradient(90deg, var(--secondary_color) 5%, var(--gold_color) 90%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+/*==========Typography CSS End==========*/
+
+/*==========Button CSS==========*/
+
+.sec_btn {
+	padding: 30px 44px;
+	font-size: 30px;
+	line-height: 0.925;
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	background-color: var(--secondary_color);
+	color: var(--gold_color);
+	position: relative;
+	border: none;
+	text-transform: capitalize;
+	z-index: 2;
+	border-radius: 100vmax;
+	outline: none !important;
+	font-weight: 500;
+	gap: 8px;
+	transition: 0.4s;
+
+	&:hover {
+		color: var(--white_color);
+	}
+
+	&.white_btn {
+		background: var(--white_color);
+		color: var(--black_color);
+		border-color: var(--white_color);
+	}
+
+	&.outline_btn {
+		font-size: 18px;
+		font-weight: 300;
+		padding: 0 15px;
+		height: 50px;
+		background: transparent;
+		color: var(--secondary_color);
+		border: 1px solid rgba(82, 70, 51, 0.31);
+
+		&:hover {
+			background-color: var(--secondary_color);
+			color: var(--gold_color);
+		}
+	}
+}
+
+/*==========Button CSS End==========*/
+
+/*==========White text CSS==========*/
+
+.white_text,
+.dark_section {
+	p,
+	h1,
+	h2,
+	h3,
+	h4,
+	h5,
+	h6,
+	ul li,
+	label,
+	.read_more {
+		color: var(--white_color);
+	}
+}
+
+.white_list_link a {
+	color: var(--white_color);
+}
+
+.white_arrow_dots {
+	.slick-dots li button {
+		border-color: var(--white_color);
+	}
+	.slick-dots li.slick-active button,
+	.slick-dots li button:hover {
+		background: var(--white_color);
+	}
+
+	.slick-arrow {
+		background: var(--white_color);
+		color: var(--black_color);
+	}
+
+	.slick-arrow:hover {
+		background: var(--black_color);
+		color: var(--white_color);
+	}
+}
+/*==========White text CSS End==========*/
