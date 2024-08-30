@@ -1,5 +1,4 @@
 import Head from 'next/head';
-// import '../public/assets/css/index.module.css';
 
 
 
