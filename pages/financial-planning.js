@@ -3,7 +3,7 @@ import Footer from "../components/Footer";
 import Image from "next/image";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-import { useEffect } from "react";
+import { useEffect, useRef } from "react";
 
 
 
@@ -15,6 +15,7 @@ export default function FInancialReport() {
 		});
 	  }, []);
 
+    const activeTab = useRef('tab1');
   return (
     <div >
       

@@ -1,5 +1,5 @@
 import { Swiper, SwiperSlide } from 'swiper/react';
-import SwiperCore, { Autoplay, Pagination, Navigation } from 'swiper';
+import SwiperCore from 'swiper';
 import Image from 'next/image';
 import '/node_modules/swiper/swiper-bundle.min.css';
 
