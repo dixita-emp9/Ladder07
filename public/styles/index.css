@@ -2024,40 +2024,117 @@ ol {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  position: relative;
+  z-index: 2;
+}
+@media (max-width: 991px) {
+  .site_header {
+    background: #fff5d6;
+  }
+}
+.site_header.toggled .header_menu_wp .toggle_btn .icon_bar {
+  margin: 0;
+}
+.site_header.toggled .header_menu_wp .toggle_btn .icon_bar:nth-child(1) {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  top: 4px;
+}
+.site_header.toggled .header_menu_wp .toggle_btn .icon_bar:nth-child(2) {
+  display: none;
+}
+.site_header.toggled .header_menu_wp .toggle_btn .icon_bar:nth-child(3) {
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  top: -3px;
+}
+.site_header.toggled .header_menu {
+  -webkit-transform: translate(0, 0);
+          transform: translate(0, 0);
 }
 .site_header .container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-  gap: 15px;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 0.6rem;
   width: 100%;
+}
+.site_header .site_logo {
+  width: 4.88rem;
 }
 .site_header .site_logo a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
+.site_header .header_menu_wp .toggle_btn {
+  cursor: pointer;
+  background: transparent;
+  border: none !important;
+  outline: none !important;
+  width: 21px;
+  height: 21px;
+  text-align: right;
+  position: relative;
+  z-index: 100;
+}
+.site_header .header_menu_wp .toggle_btn .icon_bar {
+  display: block;
+  background: var(--black_color);
+  height: 4px;
+  width: 100%;
+  margin: 2px 0;
+  -webkit-transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease;
+  background: linear-gradient(129.23deg, #524633 -4.99%, #ca9b34 100%);
+  border-radius: 10vmax;
+  position: relative;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.site_header .header_menu_wp .toggle_btn .icon_bar:nth-child(2) {
+  width: 17px;
+  margin-left: auto;
+}
+.site_header .header_menu_wp .toggle_btn .icon_bar:not(:last-child) {
+  margin-bottom: 3px;
+}
 .site_header .header_menu {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   height: 100%;
+}
+@media (max-width: 991px) {
+  .site_header .header_menu {
+    position: fixed;
+    inset: 0;
+    width: 100%;
+    height: 100vh;
+    background: var(--white_color);
+    z-index: 99;
+    display: block;
+    -webkit-transform: translate(100%, 0);
+            transform: translate(100%, 0);
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+  }
 }
 .site_header .header_menu ul li {
   display: inline-block;
-  margin: 0 20px;
+  margin: 0 0.8rem;
 }
 .site_header .header_menu ul li:first-child {
   margin-left: 0;
@@ -2073,21 +2150,28 @@ ol {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: unset;
-  -ms-flex-pack: unset;
-  justify-content: unset;
+      -ms-flex-pack: unset;
+          justify-content: unset;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   text-transform: capitalize;
   font-family: "Power Grotesk";
   color: var(--primary_color);
-  gap: 7px;
-  font-size: 20px;
+  gap: 0.28rem;
+  font-size: 1.2rem;
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
-.site_header .header_menu ul li a:hover,
-.site_header .header_menu ul li a.active {
+@media (max-width: 991px) {
+  .site_header .header_menu ul li a {
+    font-size: 1.2rem;
+  }
+}
+.site_header .header_menu ul li a img {
+  width: 0.96rem;
+}
+.site_header .header_menu ul li a:hover, .site_header .header_menu ul li a.active {
   color: var(--black_color);
 }
 .site_header .header_menu ul li a:hover .badge {
@@ -2096,17 +2180,17 @@ ol {
 }
 .site_header .header_menu ul li a .badge {
   background: var(--gold_color);
-  font-size: 10px;
-  padding: 0 10px;
-  height: 28px;
+  font-size: 0.4rem;
+  padding: 0 0.4rem;
+  height: 1.12rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   border-radius: 100vmax;
   line-height: 1;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   color: var(--secondary_color);
   -webkit-transition: 0.3s;
   transition: 0.3s;
@@ -2120,19 +2204,26 @@ ol {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: unset;
-  -ms-flex-pack: unset;
-  justify-content: unset;
+      -ms-flex-pack: unset;
+          justify-content: unset;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   text-transform: capitalize;
   font-family: "Power Grotesk";
   color: var(--primary_color);
-  gap: 7px;
-  font-size: 20px;
+  gap: 0.28rem;
+  font-size: 0.8rem;
 }
-.site_header .header_menu ul li button:hover,
-.site_header .header_menu ul li button.active {
+@media (max-width: 991px) {
+  .site_header .header_menu ul li button {
+    font-size: 1.2rem;
+  }
+}
+.site_header .header_menu ul li button img {
+  width: 0.96rem;
+}
+.site_header .header_menu ul li button:hover, .site_header .header_menu ul li button.active {
   color: var(--black_color);
 }
 .site_header .header_menu ul li button:hover .badge {
@@ -2141,17 +2232,17 @@ ol {
 }
 .site_header .header_menu ul li button .badge {
   background: var(--gold_color);
-  font-size: 10px;
-  padding: 0 10px;
-  height: 28px;
+  font-size: 0.4rem;
+  padding: 0 0.4rem;
+  height: 1.12rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   border-radius: 100vmax;
   line-height: 1;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   color: var(--secondary_color);
   -webkit-transition: 0.3s;
   transition: 0.3s;
@@ -2165,19 +2256,26 @@ ol {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: unset;
-  -ms-flex-pack: unset;
-  justify-content: unset;
+      -ms-flex-pack: unset;
+          justify-content: unset;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   text-transform: capitalize;
   font-family: "Power Grotesk";
   color: var(--primary_color);
-  gap: 7px;
-  font-size: 20px;
+  gap: 0.28rem;
+  font-size: 0.8rem;
 }
-.site_header .header_menu ul li div:hover,
-.site_header .header_menu ul li div.active {
+@media (max-width: 991px) {
+  .site_header .header_menu ul li div {
+    font-size: 1.2rem;
+  }
+}
+.site_header .header_menu ul li div img {
+  width: 0.96rem;
+}
+.site_header .header_menu ul li div:hover, .site_header .header_menu ul li div.active {
   color: var(--black_color);
 }
 .site_header .header_menu ul li div:hover .badge {
@@ -2186,21 +2284,37 @@ ol {
 }
 .site_header .header_menu ul li div .badge {
   background: var(--gold_color);
-  font-size: 10px;
-  padding: 0 10px;
-  height: 28px;
+  font-size: 0.4rem;
+  padding: 0 0.4rem;
+  height: 1.12rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   border-radius: 100vmax;
   line-height: 1;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   color: var(--secondary_color);
   -webkit-transition: 0.3s;
   transition: 0.3s;
   font-family: "Poppins", sans-serif;
+}
+@media (max-width: 991px) {
+  .site_header .header_menu ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 2.2rem;
+    padding: clamp(2.222rem, 5.961vw + 1.162rem, 4.444rem);
+  }
+  .site_header .header_menu ul li {
+    margin: 0;
+  }
 }
 
 /*==========Header CSS End==========*/
@@ -4746,11 +4860,8 @@ ol {
 }
 
 @media (max-width: 1200px) {
-  /* .about-banner-cls{
-    padding-bottom: 0;
-  } */
   .main_banner {
-    padding-block: 8.08rem 10.6rem;
+    padding-block: 1.08rem 10.6rem;
     padding-bottom: 0;
   }
   .h2_title {

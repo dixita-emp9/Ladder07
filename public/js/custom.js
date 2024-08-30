@@ -458,6 +458,10 @@ document.addEventListener("DOMContentLoaded", () => {
 
 },5);
 
+document.getElementById("toggleButton").addEventListener("click", function () {
+  document.getElementById("site_header").classList.toggle("toggled");
+  document.body.style.height = "100vh";
+});
 
 document.addEventListener("DOMContentLoaded", function () {
   const meetMemberButton = document.querySelector(".meet_member_play_btn");
