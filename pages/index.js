@@ -4,11 +4,24 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 import Image from "next/image";
 import Footer from "../components/Footer";
-import { useEffect } from 'react';
+import { useEffect, useState, useRef } from 'react';
 import HomeSlider from "../components/HomeSlider";
 
 
 export default function Home() {
+	const videoRef = useRef(null);
+	const [isVideoActive, setIsVideoActive] = useState(false);
+
+	const handlePlayClick = () => {
+	  setIsVideoActive(true);
+	  videoRef.current.play();
+	};
+  
+	const handleCloseClick = () => {
+	  setIsVideoActive(false);
+	  videoRef.current.pause();
+	};
+	
 	useEffect(() => {
 		AOS.init({
 		
@@ -885,57 +898,17 @@ export default function Home() {
 		</div>
 	</section>
 
-	{/* <section data-scroll-section className="meet_sec">
-	<div class="video_container">
-		
-		<video id="video1" preload="auto" autoPlay muted playsInline loop>
-      <source src="./image/short-video.mp4" type="video/mp4" />
-      Your browser does not support the video tag.
-    </video>
-
-		<button class="meet_member_close_btn">
-			<svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24">
-				<path fill="currentColor"
-					d="M18.3 5.71a.996.996 0 0 0-1.41 0L12 10.59L7.11 5.7A.996.996 0 1 0 5.7 7.11L10.59 12L5.7 16.89a.996.996 0 1 0 1.41 1.41L12 13.41l4.89 4.89a.996.996 0 1 0 1.41-1.41L13.41 12l4.89-4.89c.38-.38.38-1.02 0-1.4" />
-			</svg>
-		</button>
-
-	</div>
-		<div className="container">
-			<div className="meet_sec_main">
-				<div className="meet_member">
-					<Image src="/image/member_1.png" alt="Meet Member 1" className="member_img"  width={440}height={440} />
-
-					<button className="meet_member_play_btn" data-fancybox><Image
-							src="/image/play_icon.svg"  width={16}
-							height={16} /></button>
-
-					<div className="member_info">
-						<a href="#" className="h4_title">Meet <Image src="/image/right_arrow.svg"  width={16}
-												height={16}  /></a>
-						<h4 className="h4_title">Suresh Sadagopan</h4>
-						<p>Managing Director, Ladder 7</p>
-					</div>
-				</div>
-
-				<div className="meet_member_text">
-					<span className="h1_title outline_text">ladder 7</span>
-					<span className="h1_title outline_text">ladder 7</span>
-					<span className="h1_title">ladder 7</span>
-					<span className="h1_title outline_text">ladder 7</span>
-					<span className="h1_title outline_text">ladder 7</span>
-				</div>
-			</div>
-		</div>
-	</section> */}
-
-	<section class="meet_sec" id="meet_sec" data-scroll-section>
-			<div class="video_container">
-				<video id="video1" preload autoplay muted playsinline loop>
-				<source src="/image/short-video.mp4" type="video/mp4" />
+	<section  id="meet_sec" data-scroll-section>
+	<div className={`meet_sec ${isVideoActive ? "video_active" : ""}`}>
+			<div class="video_container"  style={{
+          clipPath: isVideoActive
+            ? "circle(100% at 50% 50%)"
+: "circle(18% at 50% 50%)",}}>
+				<video id="video1"  ref={videoRef} preload autoplay muted playsinline loop>
+				<source src="/image/video.mp4" type="video/mp4" />
 				</video>
 
-				<button class="meet_member_close_btn">
+				<button class="meet_member_close_btn" onClick={handleCloseClick}>
 					<svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24">
 						<path fill="currentColor"
 							d="M18.3 5.71a.996.996 0 0 0-1.41 0L12 10.59L7.11 5.7A.996.996 0 1 0 5.7 7.11L10.59 12L5.7 16.89a.996.996 0 1 0 1.41 1.41L12 13.41l4.89 4.89a.996.996 0 1 0 1.41-1.41L13.41 12l4.89-4.89c.38-.38.38-1.02 0-1.4" />
@@ -947,7 +920,7 @@ export default function Home() {
 				<div class="meet_sec_main">
 					<div class="meet_member">
 
-						<button class="meet_member_play_btn"><img src="/image/play_icon.svg" /></button>
+						<button class="meet_member_play_btn" onClick={handlePlayClick}><img src="/image/play_icon.svg" /></button>
 
 						<div class="member_info" data-scroll data-scroll-speed="1.5">
 							<a href="#" class="h4_title">Meet <img src="/image/right_arrow.svg" /></a>
@@ -965,6 +938,7 @@ export default function Home() {
 						<span class="h1_title outline_text">ladder 7</span>
 					</div>
 				</div>
+			</div>
 			</div>
 		</section>
 

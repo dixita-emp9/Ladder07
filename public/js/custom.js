@@ -466,7 +466,7 @@ document.addEventListener("DOMContentLoaded", function () {
   );
   const videoContainer = document.querySelector(".video_container");
   const videoSection = document.querySelector(".meet_sec");
-
+  setTimeout( function(){
   meetMemberButton.addEventListener("click", function () {
     videoContainer.style.clipPath = "circle(100% at 50% 50%)";
     videoSection.classList.add("video_active");
@@ -476,6 +476,7 @@ document.addEventListener("DOMContentLoaded", function () {
     videoContainer.style.clipPath = "circle(18% at 50% 50%)";
     videoSection.classList.remove("video_active");
   });
+});
 });
 
 
