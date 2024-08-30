@@ -1,4 +1,4 @@
-import { Swiper, SwiperSlide } from 'swiper/react';
+import { Swiper, SwiperSlide, Autoplay, Pagination, Navigation } from 'swiper/react';
 import SwiperCore from 'swiper';
 import Image from 'next/image';
 import '/node_modules/swiper/swiper-bundle.min.css';
