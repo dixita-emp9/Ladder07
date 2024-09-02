@@ -3,16 +3,117 @@ import Footer from "../components/Footer";
 import Image from "next/image";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 
 
 
 export default function FInancial() {
+    const [currentStep, setCurrentStep] = useState(1);
+    const [selectedOptions, setSelectedOptions] = useState({});
+    const [formSubmitted, setFormSubmitted] = useState(false);
+
+    const steps = [
+        "How many months' worth of expenses have you saved for emergencies or currently have in your bank account?",
+        "How many months' worth of expenses have you saved for emergencies or currently have in your bank account?",
+        "How many months' worth of expenses have you saved for emergencies or currently have in your bank account?",
+        "How many months' worth of expenses have you saved for emergencies or currently have in your bank account?",
+        "How many months' worth of expenses have you saved for emergencies or currently have in your bank account?",
+        "How many months' worth of expenses have you saved for emergencies or currently have in your bank account?"
+    ];
+
+
+    const formConfig = [
+        {
+            step: 1,
+            options: [
+                { value: 'less_than_month', label: 'Less than 1 month' },
+                { value: '1_3_months', label: '1-3 months' },
+                { value: '3_6_months', label: '3-6 months' },
+                { value: 'more_than_6_months', label: 'More than 6 months' }
+            ],
+            default: 'less_than_month'
+        },
+        {
+            step: 2,
+            options: [
+                { value: 'less_than_month', label: 'Less than 2 month' },
+                { value: '1_4_months', label: '1-4 months' },
+                { value: '2_6_months', label: '2-6 months' },
+                { value: 'more_than_7_months', label: 'More than 7 months' }
+            ],
+            default: 'less_than_month'
+        },
+        {
+            step: 3,
+            options: [
+                { value: 'less_than_month', label: 'Less than 3 month' },
+                { value: '1_5_months', label: '1-5 months' },
+                { value: '3_5_months', label: '3-5 months' },
+                { value: 'more_than_8_months', label: 'More than 8 months' }
+            ],
+            default: 'less_than_month'
+        },
+        {
+            step: 4,
+            options: [
+                { value: 'less_than_month', label: 'Less than 4 month' },
+                { value: '1_3_months', label: '1-3 months' },
+                { value: '3_6_months', label: '3-6 months' },
+                { value: 'more_than_9_months', label: 'More than 9 months' }
+            ],
+            default: 'less_than_month'
+        },
+        {
+            step: 5,
+            options: [
+                { value: 'less_than_month', label: 'Less than 5 month' },
+                { value: '1_3_months', label: '1-3 months' },
+                { value: '3_6_months', label: '3-6 months' },
+                { value: 'more_than_10_months', label: 'More than 10 months' }
+            ],
+            default: 'less_than_month'
+        },
+        {
+            step: 6,
+            options: [
+                { value: 'less_than_month', label: 'Less than 6 month' },
+                { value: '1_3_months', label: '1-3 months' },
+                { value: '3_6_months', label: '3-6 months' },
+                { value: 'more_than_11_months', label: 'More than 11 months' }
+            ],
+            default: 'less_than_month'
+        },
+    ];
+
+    const handleSelectOption = (value, step) => {
+        setSelectedOptions(prev => ({
+            ...prev,
+            [step]: value
+        }));
+    };
+
+    const showWizardStep = (step) => {
+        setCurrentStep(step);
+    };
+
+    const handleSubmit = (event) => {
+        event.preventDefault();
+        // Optionally, handle form submission logic here
+        setFormSubmitted(true);
+    };
+
+    const getButtonClass = (step, value) => (
+        selectedOptions[step] === value ? 'wizard-option-btn selected' : 'wizard-option-btn'
+    );
 
     useEffect(() => {
 		AOS.init({
 		
 		});
+        const defaults = formConfig.reduce((acc, { step, default: defaultValue }) => {
+            return { ...acc, [step]: defaultValue };
+        }, {});
+        setSelectedOptions(defaults);
 	  }, []);
 
   return (
@@ -24,7 +125,7 @@ export default function FInancial() {
       
 	<Header />
  
-    <section data-scroll-section className="main_banner">
+    <section data-scroll-section className="main_banner financial-report-sec">
         <div className="container">
             <div className="banner_shape">
                 <div className="animated_svg_wp banner_left_shape">
@@ -139,6 +240,97 @@ export default function FInancial() {
             </div>
         </div>
     </section>
+
+    <section data-scroll-section className="wizard-form-section">
+        <div className="container">
+
+            <div className="wizard-container ">
+                <div className="wizard-header">
+                    <div className="wizard-steps">
+                        <h1 className="h2_title fadeup-animation delay_0_2" data-scroll>Basic Liquidity/<br/>Emergency</h1>
+                    </div>
+                    <div className="steps-indicator fadeup-animation delay_0_4" data-scroll>
+                        {steps.map((_, index) => (
+                            <span
+                                key={index}
+                                className={`step ${currentStep === index + 1 ? 'active' : ''}`}
+                                onClick={() => showWizardStep(index + 1)}
+                            >
+                                {index + 1}
+                            </span>
+                        ))}
+                    </div>
+                </div>
+
+                {!formSubmitted ? (
+                    <form id="wizardForm" onSubmit={handleSubmit} className="fadeup-animation delay_0_6" data-scroll>
+                        {formConfig.map(({ step, options, default: defaultOption  }) => (
+                            <div
+                                key={step}
+                                className="wizard-step-section"
+                                style={{ display: currentStep === step ? 'block' : 'none' }}
+                            >
+                                <div className="wizard-question-section">
+                                    <h2 className="outline_text">{`0${step}`}</h2>
+                                    <p>{steps[step - 1]}</p>
+                                    <div className="wizard-form-options">
+                                        {options.map(({ value, label }, idx) => (
+                                            <button
+                                                key={value}
+                                                type="button"
+                                                className={getButtonClass(step, value)}
+                                                onClick={() => handleSelectOption(value, step)}
+                                            >
+                                                <span className="wizard-option-label outline_text"><b>{String.fromCharCode(65 + idx)}</b></span><span>{label}</span>
+                                                
+                                            </button>
+                                        ))}
+                                    </div>
+                                </div>
+                                <div className="wizard-btn-flex">
+                                {step > 1 && (
+                                    <div className="wizard-prev-flex"><button type="button" className="wizard-prev-btn" onClick={() => showWizardStep(step - 1)}><span className="arrow-image arrow-prev-img"><div className="prev-img-cls"><img src="/image/back-arrow-svg.svg" width={30} height={30} alt="Next" className="arrow-image" /></div></span>Back</button></div>
+                                )}
+                                {step < formConfig.length ? (
+                                    <div className="wizard-next-flex"><button type="button" className="wizard-next-btn" onClick={() => showWizardStep(step + 1)}><span>Next</span> <span className="arrow-image"><div className="prev-img-cls"><img src="/image/right_arrow.svg" width={30} height={30} alt="Next" className="arrow-image" /></div></span></button></div>
+                                ) : (
+                                    <button type="submit" className="wizard-next-btn submit-btn-cls">Submit</button>
+                                )}
+                                </div>
+                            </div>
+                        ))}
+                    </form>
+                ) : (
+                    <div className="success-message" style={{ display: formSubmitted ? 'block' : 'none' }} id="successMessage">
+                        <p>Form submitted successfully! Thank you for your response.</p>
+                    </div>
+                )}
+            </div>
+        </div>
+    </section>
+
+    <section data-scroll-section className="cta_sec">
+		<div className="container">
+			<div className="cta_sec_wp">
+				<div className="cta_left_content">
+					<h2 className="h2_title">
+						Schedule a meeting today!
+					</h2>
+					<p>Our expert team of financial advisors is always ready to help you. Book a consultation now!</p>
+					<a href="#" className="sec_btn">
+					<div className="text-btn"> Schedule Now  </div>	 <Image src="/image/right_arrow.svg" width={16} height={16}/>
+					</a>
+				</div>
+
+				<div className="cta_right_content">
+					<Image src="/image/cta_img.png" alt="cta Image"  width={872}
+												height={511}/>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
    <Footer/>
    
 </div>

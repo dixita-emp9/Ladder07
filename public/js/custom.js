@@ -266,6 +266,18 @@ var cardImageSlider = new Swiper(".card_top_content_right_slider", {
     delay: 3000,
     disableOnInteraction: false,
   },
+   navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: "true",
+    type: "bullets",
+    renderBullet: function (currentClass, totalClass) {
+      return '<span class="' + totalClass + '"><b></b></span>';
+    },
+  },
   speed: 1000,
 });
 
@@ -338,6 +350,41 @@ var cardImageSlider = new Swiper(".card_top_content_right_slider", {
       },
       992: {
         slidesPerView: 2.2,
+        spaceBetween: 30,
+      },
+    },
+    speed: 1000,
+  });
+  
+  var managementServiceSlider = new Swiper(".benefits_management_service_slider", {
+    slidesPerView: 4,
+    loop: true,
+    spaceBetween: 50,
+    speed: 700,
+    grabCursor: true,
+    autoplay: {
+      delay: 3000,
+      disableOnInteraction: false,
+    },
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: "true",
+      type: "bullets",
+      renderBullet: function (currentClass, totalClass) {
+        return '<span class="' + totalClass + '"><b></b></span>';
+      },
+    },
+    breakpoints: {
+      0: {
+        spaceBetween: 15,
+        slidesPerView: 1,
+      },
+      576: {
+        spaceBetween: 15,
+        slidesPerView: 1.8,
+      },
+      992: {
+        slidesPerView: 4,
         spaceBetween: 30,
       },
     },
@@ -476,12 +523,60 @@ document.addEventListener("DOMContentLoaded", function () {
     videoSection.classList.add("video_active");
   });
 
-  meetMemberCloseButton.addEventListener("click", function () {
-    videoContainer.style.clipPath = "circle(18% at 50% 50%)";
-    videoSection.classList.remove("video_active");
+    meetMemberCloseButton.addEventListener("click", function () {
+      videoContainer.style.clipPath = "circle(18% at 50% 50%)";
+      videoSection.classList.remove("video_active");
+    });
   });
 });
+
+var ourTimelineSlider = new Swiper(".our_timeline_slider", {
+  slidesPerView: "3",
+  // loop: true,
+  spaceBetween: 106,
+  speed: 700,
+  grabCursor: true,
+  freeMode: true,
+  // autoplay: {
+  //   delay: 3000,
+  // },
+  navigation: {
+    nextEl: '.timeline-next',
+    prevEl: '.timeline-prev',
+  },
+  breakpoints: {
+    0: {
+      spaceBetween: 20,
+      slidesPerView: 1,
+      // direction: 'vertical', 
+    },
+    575: {
+      spaceBetween: 40,
+      slidesPerView: 1,
+      // direction: 'vertical', 
+    },
+    1201: {
+      spaceBetween: 106,
+      slidesPerView: 3,
+      // direction: 'horizontal',
+    },
+  },
+  speed: 1000,
 });
+document.addEventListener("DOMContentLoaded", function () {
+  const founderItems = document.querySelectorAll(".our_timeline_box");
+
+  founderItems.forEach((item) => {
+    item.addEventListener("mouseenter", () => {
+      founderItems.forEach((box) =>
+        box.classList.remove("our_timeline_box_active")
+      );
+      item.classList.add("our_timeline_box_active");
+    });
+  });
+});
+
+
 
 
 

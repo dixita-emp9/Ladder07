@@ -376,12 +376,12 @@ export default function Home() {
 				<div className="banner_content row ">
 
 						<div className="col-md-5 tex-start">
-							<h3 className="sub_title home_sub_title">Finances has never been this interesting.</h3>
-							<h1 className="h1_title home-page-title">Engage With a New Generation</h1>
+							<h3 className="sub_title home_sub_title">Come Let Us Build A Financial Blueprint For A Secure Future</h3>
+							<h1 className="h1_title home-page-title">Your Compass For Financial Well-Being</h1>
 							
 							<div className="banner_btn_wp home-btn-cls-desktop">
-								<a href="#" className="sec_btn" title="Read More"><div className="text-btn">Read More </div> <Image
-									src="/image/right_arrow.svg" width={16} height={16} />
+								<a href="#" className="sec_btn" title="Connect Now"><div className="text-btn">Connect Now </div> <Image
+									src="/image/right_arrow.svg" width={25} height={25} />
 								</a>
 							</div>
 						</div>
@@ -405,8 +405,8 @@ export default function Home() {
 							</div>
 
 							<div data-aos="clip-left" data-aos-delay="1000" data-aos-duration="500" data-aos-easing="ease-in-cubic" className="home-btn-cls-mobile">
-								<a href="#" className="sec_btn" title="Read More"><div className="text-btn">Read More </div> <Image
-									src="/image/right_arrow.svg" width={16} height={16} />
+								<a href="#" className="sec_btn" title="Connect Now"><div className="text-btn">Connect Now </div> <Image
+									src="/image/right_arrow.svg" width={25} height={25} />
 								</a>
 							</div>
 				</div>
@@ -419,14 +419,14 @@ export default function Home() {
 	
 	<section data-scroll-section className="our_work">
 		<div className="our_work_title text_center">
-			<h2 className="h2_title">We work only in your best interest</h2>
+			<h2 className="h2_title">We Work In Your Best Interests Above All Else</h2>
 		</div>
 		<div className="swiper work_tab">
 			<div className="swiper-wrapper">
 				<div className="swiper-slide">
 					<div className="work_tab_box work_tab_active">
 						<div className="work_tab_box_title">
-							<h3 className="h3_title"><span className="h1_title outline_text">01</span> <b>Life Planning</b>
+							<h3 className="h3_title"><span className="h1_title outline_text">01</span> <b>Financial Planning</b>
 							</h3>
 						</div>
 
@@ -439,25 +439,25 @@ export default function Home() {
 									</div>
 									<div className="work_tab_box_text">
 										<h4 className="h1_title outline_text">01</h4>
-										<h3 className="h3_title">Life Planning</h3>
+										<h3 className="h3_title">Financial Planning</h3>
 										<ul>
 											<li>
 												<Image src="/image/right_arrow.svg" alt="Arrow" width={16}
 													height={16} />
 
-												Pointer One
+Understanding You & Your Goals
 											</li>
 											<li>
 												<Image src="/image/right_arrow.svg" alt="Arrow" width={16}
 													height={16} />
 
-												Pointer One
+Blueprint For A Secure Future
 											</li>
 											<li>
 												<Image src="/image/right_arrow.svg" alt="Arrow" width={16}
 													height={16} />
 
-												Pointer One
+Clarity & Peace Of Mind Assured
 											</li>
 										</ul>
 
@@ -471,8 +471,7 @@ export default function Home() {
 					</div>
 					<div className="work_tab_box">
 						<div className="work_tab_box_title">
-							<h3 className="h3_title"><span className="h1_title outline_text">02</span> <b>Financial
-									Planning</b></h3>
+							<h3 className="h3_title"><span className="h1_title outline_text">02</span> <b>Life Planning</b></h3>
 						</div>
 
 						<div className="work_tab_box_content">
@@ -484,25 +483,25 @@ export default function Home() {
 								</div>
 								<div className="work_tab_box_text">
 									<h4 className="h1_title outline_text">02</h4>
-									<h3 className="h3_title">Financial Planning</h3>
+									<h3 className="h3_title">Life Planning</h3>
 									<ul>
 										<li>
 											<Image src="/image/right_arrow.svg" alt="Arrow" width={16}
 												height={16} />
 
-											Pointer One
+Envision The Life you want
 										</li>
 										<li>
 											<Image src="/image/right_arrow.svg" alt="Arrow" width={16}
 												height={16} />
 
-											Pointer One
+Action To Make It A Reality
 										</li>
 										<li>
 											<Image src="/image/right_arrow.svg" alt="Arrow" width={16}
 												height={16}/>
 
-											Pointer One
+Delight & Fulfilment In Life
 										</li>
 									</ul>
 
@@ -516,7 +515,7 @@ export default function Home() {
 					</div>
 					<div className="work_tab_box">
 						<div className="work_tab_box_title">
-							<h3 className="h3_title"><span className="h1_title outline_text">01</span> <b>Life Planning</b>
+							<h3 className="h3_title"><span className="h1_title outline_text">01</span> <b>Wealth Management</b>
 							</h3>
 						</div>
 
@@ -529,25 +528,25 @@ export default function Home() {
 								</div>
 								<div className="work_tab_box_text">
 									<h4 className="h1_title outline_text">02</h4>
-									<h3 className="h3_title">Financial Planning</h3>
+									<h3 className="h3_title">Wealth Management</h3>
 									<ul>
 										<li>
 											<Image src="/image/right_arrow.svg" alt="Arrow"  width={16}
 												height={16}  />
 
-											Pointer One
+Align Money To Meet Goals
 										</li>
 										<li>
 											<Image src="/image/right_arrow.svg" alt="Arrow"  width={16}
 												height={16}  />
 
-											Pointer One
+Optimise & Diversify Portfolio
 										</li>
 										<li>
 											<Image src="/image/right_arrow.svg" alt="Arrow"  width={16}
 												height={16}  />
 
-											Pointer One
+Meet Goals & Create Wealth
 										</li>
 									</ul>
 
@@ -623,11 +622,11 @@ export default function Home() {
 		</div>
 	</section> */}
 
-<section data-scroll-section className="compliance">
+	<section data-scroll-section className="compliance">
 		<div className="container">
 			<div className="compliance_title text_center">
-				<h2 className="h2_title">Compliance Section</h2>
-				<p>Complaints data, Investor Charter & Grievance Resolution Process</p>
+				<h2 className="h2_title">Compliance Assurance</h2>
+				<p>Discover how we uphold accountability & empower your financial journey with integrity.</p>
 			</div>
 		</div>
 		<div className="compliance_wp">
@@ -639,9 +638,8 @@ export default function Home() {
 				<div className="compliance_box_content">
 					<Image src="/image/complaints.png" alt="complaints"  width={1189}
 												height={266}  />
-					<h3 className="h2_title">Complaints Data</h3>
-					<p>In line with SEBI compliance, a complete breakup of complaints against our firm are detailed
-						here.</p>
+					<h3 className="h2_title">Investors Complaints</h3>
+					<p>We believe in complete transparency. We are disclosing here the detailed record of any complaints against us.</p>
 				</div>
 			</div>
 			<div className="compliance_box">
@@ -653,8 +651,7 @@ export default function Home() {
 					<Image src="/image/complaints.png" alt="complaints"  width={1189}
 												height={266} />
 					<h3 className="h2_title">Investor Charter</h3>
-					<p>In line with SEBI compliance, a complete breakup of complaints against our firm are detailed
-						here.</p>
+					<p>Empower your financial journey aligned with the SEBI initiative, outlining the services & support you can expect from us. </p>
 				</div>
 			</div>
 			<div className="compliance_box">
@@ -665,9 +662,9 @@ export default function Home() {
 				<div className="compliance_box_content">
 					<Image src="/image/complaints.png" alt="complaints"  width={1189}
 												height={266}  />
-					<h3 className="h2_title">Grievance Resolution</h3>
-					<p>In line with SEBI compliance, a complete breakup of complaints against our firm are detailed
-						here.</p>
+					<h3 className="h2_title">Investors Rights</h3>
+					<p>Investors Rights
+					We pledge ethical, independent advice, fair treatment, & full conflict of interest disclosure to protect our investor's interests.</p>
 				</div>
 			</div>
 		</div>
@@ -676,7 +673,7 @@ export default function Home() {
 	<section data-scroll-section className="home_clients">
 		<div className="container">
 			<div className="home_clients_title text_center">
-				<h2 className="h2_title">Why Ladder7 stood out for <span className="gradient_title">1000+ Clients</span></h2>
+				<h2 className="h2_title">Why Come To <span className="gradient_title">Ladder7?</span></h2>
 			</div>
 
 			<div className="home_clients_slider">
@@ -691,8 +688,7 @@ export default function Home() {
 							<div className="home_clients_box_content">
 								<span className="h1_title outline_text">01</span>
 								<h3 className="h3_title">SEBI Registered Investment Advisors</h3>
-								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-									incididunt ut labore et dolore magna aliqua.</p>
+								<p>As SEBI RIAs, we ensure your financial security with our top-tier standards in education, experience, compliance, providing you with client-centric advice at all points.</p>
 							</div>
 						</div>
 					</div>
@@ -704,10 +700,9 @@ export default function Home() {
 							</div>
 
 							<div className="home_clients_box_content">
-								<span className="h1_title outline_text">01</span>
-								<h3 className="h3_title">SEBI Registered Investment Advisors</h3>
-								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-									incididunt ut labore et dolore magna aliqua.</p>
+								<span className="h1_title outline_text">02</span>
+								<h3 className="h3_title">Fiduciary Standard Of Care</h3>
+								<p>Your best interests come first! Guided by SEBI IA regulations, we prioritize integrity, trust, & ethics, ensuring your financial dreams are always safeguarded.</p>
 							</div>
 						</div>
 					</div>
@@ -719,10 +714,9 @@ export default function Home() {
 							</div>
 
 							<div className="home_clients_box_content">
-								<span className="h1_title outline_text">01</span>
-								<h3 className="h3_title">SEBI Registered Investment Advisors</h3>
-								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-									incididunt ut labore et dolore magna aliqua.</p>
+								<span className="h1_title outline_text">03</span>
+								<h3 className="h3_title">Your Dedicated Personal CFOs</h3>
+								<p>Focus on what matters most—family, passions, health, & peace of mind. As your personal CFOs, we manage your finances, anchoring your overall well-being.</p>
 							</div>
 						</div>
 					</div>
@@ -734,10 +728,9 @@ export default function Home() {
 							</div>
 
 							<div className="home_clients_box_content">
-								<span className="h1_title outline_text">01</span>
-								<h3 className="h3_title">SEBI Registered Investment Advisors</h3>
-								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-									incididunt ut labore et dolore magna aliqua.</p>
+								<span className="h1_title outline_text">04</span>
+								<h3 className="h3_title">Delivering Clarity & Peace Of Mind</h3>
+								<p>Leave financial stress behind. Our experienced team provides clear, tailored & actionable advice, helping you navigate your financial path with confidence & ease.</p>
 							</div>
 						</div>
 					</div>
@@ -751,7 +744,7 @@ export default function Home() {
 	<section data-scroll-section className="our_number_sec">
 		<div className="container">
 			<div className="our_number_title text_center">
-				<h2 className="h2_title">What our number says</h2>
+				<h2 className="h2_title">Our Milestones Over The Years</h2>
 			</div>
 
 			<div className="our_number_slider">
@@ -761,8 +754,8 @@ export default function Home() {
 							<Image src="/image/money_img.svg" alt="Number"  width={201}
 												height={148} />
 							<div className="our_number_content">
-								<h3 className="h1_title outline_text">500M+</h3>
-								<p>invested successfully</p>
+								<h3 className="h1_title outline_text">20+</h3>
+								<p>Years Of Established Existence</p>
 							</div>
 						</div>
 					</div>
@@ -771,8 +764,8 @@ export default function Home() {
 							<Image src="/image/money_img.svg" alt="Number"  width={201}
 												height={148} />
 							<div className="our_number_content">
-								<h3 className="h1_title outline_text">12+</h3>
-								<p>Years of experience</p>
+								<h3 className="h1_title outline_text">300+</h3>
+								<p>Happy & Active Client Base</p>
 							</div>
 						</div>
 					</div>
@@ -781,8 +774,8 @@ export default function Home() {
 							<Image src="/image/money_img.svg" alt="Number"  width={201}
 												height={148} />
 							<div className="our_number_content">
-								<h3 className="h1_title outline_text">149+</h3>
-								<p>cities across globe</p>
+								<h3 className="h1_title outline_text">15+</h3>
+								<p>Countries, Trusted By Global Clients</p>
 							</div>
 						</div>
 					</div>
@@ -791,8 +784,8 @@ export default function Home() {
 							<Image src="/image/money_img.svg" alt="Number"  width={201}
 												height={148} />
 							<div className="our_number_content">
-								<h3 className="h1_title outline_text">800</h3>
-								<p>cities across globe</p>
+								<h3 className="h1_title outline_text">60,000+</h3>
+								<p>Hours Of Personalized Consultation Delivered</p>
 							</div>
 						</div>
 					</div>
@@ -801,8 +794,8 @@ export default function Home() {
 							<Image src="/image/money_img.svg" alt="Number"  width={201}
 												height={148} />
 							<div className="our_number_content">
-								<h3 className="h1_title outline_text">100K+</h3>
-								<p>Years of experience</p>
+								<h3 className="h1_title outline_text">1000+</h3>
+								<p>Successful Plans Delivered</p>
 							</div>
 						</div>
 					</div>
@@ -922,10 +915,11 @@ export default function Home() {
 
 						<button class="meet_member_play_btn" onClick={handlePlayClick}><img src="/image/play_icon.svg" /></button>
 
+						{/* <div class="member_info" data-scroll data-scroll-speed="1.5"> */}
 						<div class="member_info" data-scroll data-scroll-speed="1.5">
 							<a href="#" class="h4_title">Meet <img src="/image/right_arrow.svg" /></a>
 							<h4 class="h4_title">Suresh Sadagopan</h4>
-							<p>Managing Director, Ladder 7</p>
+							<p>Founder & Managing Director, Ladder7</p>
 						</div>
 					</div>
 
@@ -940,7 +934,7 @@ export default function Home() {
 				</div>
 			</div>
 			</div>
-		</section>
+	</section>
 
 	<section data-scroll-section className="testimonials_sec">
 		{/* <div className="testimonials_shape">
@@ -1017,7 +1011,7 @@ export default function Home() {
 			
 		<div className="container">
 			<div className="testimonials_sec_title text_center">
-				<h2 className="h2_title">What our customer is saying about us</h2>
+				<h2 className="h2_title">How We Made A Difference In Our Client's Lives...</h2>
 			</div>
 
 			<div className="swiper testimonials_slider">
@@ -1025,22 +1019,18 @@ export default function Home() {
 					<div className="swiper-slide">
 						<div className="testimonials_slide">
 							<div className="testimonials_Image">
-								<Image src="/image/tesimonials_1.png" alt="People 1"  width={314} height={314} />
+								<Image src="/image/image1.jpg" alt="Vinayak Ekbote"  width={314} height={314} />
 								<div class="testimonials_author_info for_mob">
-									<p>Mr. Alon Musk</p>
-									<h6>CEO of Tesla Motors</h6>
+									<p>Vinayak Ekbote</p>
+									<h6>New Delhi</h6>
 								</div>
 							</div>
 							<div className="testimonials_content">
 								<div className="testimonials_author_info for_des">
-									<p>Mr. Alon Musk</p>
-									<h6>CEO of Tesla Motors</h6>
+									<p>Vinayak Ekbote</p>
+									<h6>New Delhi</h6>
 								</div>
-								<p>
-									Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-									incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur
-									adipiscing elit, sed
-									do eiusmod tempor incididunt ut labore et dolore magna aliqua
+								<p>It’s been an excellent association with him and his team at Ladder7 for the last 6 years and I have no hesitation in recommending him as your go-to person for all your Financial Planning needs.					
 								</p>
 							</div>
 						</div>
@@ -1048,26 +1038,264 @@ export default function Home() {
 					<div className="swiper-slide">
 						<div className="testimonials_slide">
 							<div className="testimonials_Image">
-								<Image src="/image/tesimonials_1.png" alt="People 1"  width={314} height={314}  />
+								<Image src="/image/Mohan-laligam-211.jpg" alt="Dr.Laligam Mohan"  width={314} height={314}  />
 								<div class="testimonials_author_info for_mob">
-									<p>Mr. Alon Musk</p>
-									<h6>CEO of Tesla Motors</h6>
+									<p>Dr.Laligam Mohan</p>
+									<h6>Chennai</h6>
 								</div>
 							</div>
 							<div className="testimonials_content">
 								<div className="testimonials_author_info for_des">
-									<p>Mr. Alon Musk</p>
-									<h6>CEO of Tesla Motors</h6>
+									<p>Dr.Laligam Mohan</p>
+									<h6>Chennai</h6>
 								</div>
 								<p>
-									Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-									incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur
-									adipiscing elit, sed
-									do eiusmod tempor incididunt ut labore et dolore magna aliqua
+								I do not know where I would have been without them. I thank Ladder7 Sage Counsel Advisors for taking charge of my life removing a significant area of stress for me.
 								</p>
 							</div>
 						</div>
 					</div>
+					<div className="swiper-slide">
+						<div className="testimonials_slide">
+							<div className="testimonials_Image">
+								<Image src="/image/Surendra-Ranganath2.jpg" alt="Surendra Ranganath"  width={314} height={314} />
+								<div class="testimonials_author_info for_mob">
+									<p>Surendra Ranganath</p>
+									<h6>Puducherry</h6>
+								</div>
+							</div>
+							<div className="testimonials_content">
+								<div className="testimonials_author_info for_des">
+									<p>Surendra Ranganath</p>
+									<h6>Puducherry</h6>
+								</div>
+								<p>	I can confidently share is that their advice puts the client first, and is free from any conflict of interest. I value the peace of mind (can a price be put on this?)	
+					
+								</p>
+							</div>
+						</div>
+					</div>
+					<div className="swiper-slide">
+						<div className="testimonials_slide">
+							<div className="testimonials_Image">
+								<Image src="/image/Syam-S4.jpg" alt="Syam S"  width={314} height={314}  />
+								<div class="testimonials_author_info for_mob">
+									<p>Syam S</p>
+									<h6>Navi Mumbai</h6>
+								</div>
+							</div>
+							<div className="testimonials_content">
+								<div className="testimonials_author_info for_des">
+									<p>Syam S</p>
+									<h6>Navi Mumbai</h6>
+								</div>
+								<p>
+								Life just changed once I placed that “trust” in Suresh. “It is not Timing the Market, It is Time in the Market" he keeps saying.
+								</p>
+							</div>
+						</div>
+					</div>
+					<div className="swiper-slide">
+						<div className="testimonials_slide">
+							<div className="testimonials_Image">
+								<Image src="/image/Bindhu_Unny5.jpg" alt="Bindhu &amp; Unny "  width={314} height={314} />
+								<div class="testimonials_author_info for_mob">
+									<p>Bindhu &amp; Unny </p>
+									<h6>Mumbai</h6>
+								</div>
+							</div>
+							<div className="testimonials_content">
+								<div className="testimonials_author_info for_des">
+									<p>Bindhu &amp; Unny </p>
+									<h6>Mumbai</h6>
+								</div>
+								<p>Other than the meticulous financial plan, what we love is the information that is regularly sent our way so that we remain up-to-date about the developments in the financial realm.					
+								</p>
+							</div>
+						</div>
+					</div>
+					<div className="swiper-slide">
+						<div className="testimonials_slide">
+							<div className="testimonials_Image">
+								<Image src="/image/Bhaskar-ganguly.jpg" alt="Bhaskar Ganguly"  width={314} height={314}  />
+								<div class="testimonials_author_info for_mob">
+									<p>Bhaskar Ganguly</p>
+									<h6>Navi Mumbai</h6>
+								</div>
+							</div>
+							<div className="testimonials_content">
+								<div className="testimonials_author_info for_des">
+									<p>Bhaskar Ganguly</p>
+									<h6>Navi Mumbai</h6>
+								</div>
+								<p>
+								After having gone to Mr Suresh Sadagopan, I have gained confidence that I will be able to meet my future goals in life. It has been a great association of 9 years. 
+								</p>
+							</div>
+						</div>
+					</div>
+					<div className="swiper-slide">
+						<div className="testimonials_slide">
+							<div className="testimonials_Image">
+								<Image src="/image/Vikas-Sehgal-photo.jpg" alt="Dr. Vikas Sehgal"  width={314} height={314} />
+								<div class="testimonials_author_info for_mob">
+									<p>Dr. Vikas Sehgal</p>
+									<h6>Ambala</h6>
+								</div>
+							</div>
+							<div className="testimonials_content">
+								<div className="testimonials_author_info for_des">
+									<p>Dr. Vikas Sehgal</p>
+									<h6>Ambala</h6>
+								</div>
+								<p>They clearly declare initially their fees / charges &amp; do not earn indirectly through commissions, which makes them client-centric &amp; conflict free. This makes their practice very ethical &amp; truly in client's best interests.					
+								</p>
+							</div>
+						</div>
+					</div>
+					<div className="swiper-slide">
+						<div className="testimonials_slide">
+							<div className="testimonials_Image">
+								<Image src="/image/Ramachandran-K-photo1.jpg" alt="Ramachandran K"  width={314} height={314}  />
+								<div class="testimonials_author_info for_mob">
+									<p>Ramachandran K</p>
+									<h6>Chennai</h6>
+								</div>
+							</div>
+							<div className="testimonials_content">
+								<div className="testimonials_author_info for_des">
+									<p>Ramachandran K</p>
+									<h6>Chennai</h6>
+								</div>
+								<p>
+								My experience with Ladder 7 - was equivalent  to undergoing a thorough medical check-up. The kind of information sought , discussed and documented is a good assessment  of my financial health.
+								</p>
+							</div>
+						</div>
+					</div>
+					<div className="swiper-slide">
+						<div className="testimonials_slide">
+							<div className="testimonials_Image">
+								<Image src="/image/Mahesh-vala-photo3.jpg" alt="Mahesh Vala"  width={314} height={314} />
+								<div class="testimonials_author_info for_mob">
+									<p>Mahesh Vala</p>
+									<h6>Babrala</h6>
+								</div>
+							</div>
+							<div className="testimonials_content">
+								<div className="testimonials_author_info for_des">
+									<p>Mahesh Vala</p>
+									<h6>Babrala</h6>
+								</div>
+								<p>Mr Suresh and his team deliver truly professional financial planning services and put their clients’ interests first – I’d happily recommend LADDER7 to anyone wanting a holistic personalised financial planning service.					
+								</p>
+							</div>
+						</div>
+					</div>
+					<div className="swiper-slide">
+						<div className="testimonials_slide">
+							<div className="testimonials_Image">
+								<Image src="/image/Abhishek_023.jpg" alt="Abhishek Dwivedi"  width={314} height={314}  />
+								<div class="testimonials_author_info for_mob">
+									<p>Abhishek Dwivedi</p>
+									<h6>Navi Mumbai</h6>
+								</div>
+							</div>
+							<div className="testimonials_content">
+								<div className="testimonials_author_info for_des">
+									<p>Abhishek Dwivedi</p>
+									<h6>Navi Mumbai</h6>
+								</div>
+								<p>
+								There are instances, where they are able to do changes as well cater to my requests with very effective responsiveness and don’t force options on you.	
+								</p>
+							</div>
+						</div>
+					</div>
+					<div className="swiper-slide">
+						<div className="testimonials_slide">
+							<div className="testimonials_Image">
+								<Image src="/image/Durbar-mukherjee4.jpg" alt="Durbar Mukherjee"  width={314} height={314} />
+								<div class="testimonials_author_info for_mob">
+									<p>Durbar Mukherjee</p>
+									<h6>Puducherry</h6>
+								</div>
+							</div>
+							<div className="testimonials_content">
+								<div className="testimonials_author_info for_des">
+									<p>Durbar Mukherjee</p>
+									<h6>Puducherry</h6>
+								</div>
+								<p>	I look forward to continuing the association and to avail their expertise in future too. I recommend Ladder 7 to anyone who wants to seek expert advice on personal finance &amp; financial planning in India.	
+					
+								</p>
+							</div>
+						</div>
+					</div>
+					<div className="swiper-slide">
+						<div className="testimonials_slide">
+							<div className="testimonials_Image">
+								<Image src="/image/Ranjalkars.jpg" alt="Prakash &amp; Madhuri Ranjalkar"  width={314} height={314}  />
+								<div class="testimonials_author_info for_mob">
+									<p>Prakash &amp; Madhuri Ranjalkar</p>
+									<h6>Mumbai/Myanmar</h6>
+								</div>
+							</div>
+							<div className="testimonials_content">
+								<div className="testimonials_author_info for_des">
+									<p>Prakash &amp; Madhuri Ranjalkar</p>
+									<h6>Mumbai/Myanmar</h6>
+								</div>
+								<p>
+								Their periodic review of our financial-health and life-goals has been holistic and informative. The plan arising out of it has always been practical and implementable.
+								</p>
+							</div>
+						</div>
+					</div>
+					<div className="swiper-slide">
+						<div className="testimonials_slide">
+							<div className="testimonials_Image">
+								<Image src="/image/Manoj-n-Sunita15.jpg" alt="Manoj &amp; Sunita"  width={314} height={314} />
+								<div class="testimonials_author_info for_mob">
+									<p>Manoj &amp; Sunita</p>
+									<h6>Mumbai</h6>
+								</div>
+							</div>
+							<div className="testimonials_content">
+								<div className="testimonials_author_info for_des">
+									<p>Manoj &amp; Sunita</p>
+									<h6>Mumbai</h6>
+								</div>
+								<p>Suresh brought a lot of professional experience, ethics, integrity and customer oriented approach in all our interactions and it is a great pleasure to deal with him and his firm.				
+								</p>
+							</div>
+						</div>
+					</div>
+					<div className="swiper-slide">
+						<div className="testimonials_slide">
+							<div className="testimonials_Image">
+								<Image src="/image/WI6.jpg" alt="Kumarjit Bhattacharjee"  width={314} height={314}  />
+								<div class="testimonials_author_info for_mob">
+									<p>Kumarjit Bhattacharjee</p>
+									<h6>Pune</h6>
+								</div>
+							</div>
+							<div className="testimonials_content">
+								<div className="testimonials_author_info for_des">
+									<p>Kumarjit Bhattacharjee</p>
+									<h6>Pune</h6>
+								</div>
+								<p>
+								From the first meeting, we got the impression that we are partnering with a competent and capable team of professionals.  
+								</p>
+							</div>
+						</div>
+					</div>
+					
+
+
+
+
 				</div>
 				<div className="swiper_button">
 					<button className="swiper-button-prev">
@@ -1163,6 +1391,7 @@ export default function Home() {
 											height={16}  /></a>
 								</div>
 							</div>
+							<div className="swiper-pagination"></div>
 						</div>
 					</div>
 				</div>
@@ -1410,9 +1639,8 @@ export default function Home() {
 	<section data-scroll-section className="management_sec">
 		<div className="container">
 			<div className="management_sec_title text_center">
-				<h2 className="h2_title">A Truly Unique Wealth Management Experience</h2>
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-					et dolore magna aliqua.</p>
+				<h2 className="h2_title">Come To Us For Your Success Planned!</h2>
+				<p>Whatever your stage of life, we can assist you to streamline your finances and achieve life goals. Get started today!</p>
 			</div>
 
 			<form className="contact_form">
@@ -1461,8 +1689,7 @@ export default function Home() {
 
 				<div className="checkbox_input_wp">
 					<input type="checkbox" name="term" id="trem"/>
-					<label htmlFor="trem">By clicking the above button, you agree to our Terms of Service and confirm that
-						you have read and understood our Privacy Policy</label>
+					<label htmlFor="trem">By clicking the above button, you agree to our Terms of Service and confirm that you have read and understood our Privacy Policy</label>
 				</div>
 
 				<div className="form_submit">
@@ -1483,11 +1710,11 @@ export default function Home() {
 			<div className="cta_sec_wp">
 				<div className="cta_left_content">
 					<h2 className="h2_title">
-						Schedule a meeting today!
+					Schedule a consultation today!
 					</h2>
-					<p>Our expert team of financial advisors is always ready to help you. Book a consultation now!</p>
+					<p>Our team of financial advisors will engage with you, understand your requirements and advice on the way forward. </p>
 					<a href="#" className="sec_btn">
-						<div className="text-btn">Schedule Now  </div><Image src="/image/right_arrow.svg"  width={25}
+						<div className="text-btn">Let's Begin  </div><Image src="/image/right_arrow.svg"  width={25}
 												height={25} />
 					</a>
 				</div>

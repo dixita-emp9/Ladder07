@@ -2633,7 +2633,7 @@ ol {
   right: var(--position);
 }
 .main_banner .banner_content {
-  max-width: 1320px;
+  /* max-width: 1320px; */
   /* text-align: center; */
   margin: 0 auto;
 }
@@ -2807,7 +2807,7 @@ ol {
 /*==========Our Work CSS End==========*/
 /*==========Compliance CSS==========*/
 .compliance {
-  padding-block: 0 2.4rem;
+  padding-block: 5.4rem 5.4rem;
 }
 .compliance .compliance_title {
   margin-bottom: 93px;
@@ -3021,7 +3021,7 @@ ol {
   padding-block: 4.2rem 8.72rem;
 }
 .our_number_sec .our_number_title {
-  max-width: 25.4rem;
+  max-width: 40.4rem;
   margin-inline: auto;
   margin-bottom: 3.28rem;
 }
@@ -3198,6 +3198,7 @@ ol {
 .meet_sec {
   margin-top: 2rem;
   overflow: hidden;
+  padding-block: 10rem;
 }
 .meet_sec.video_active .video_container {
   z-index: 20;
@@ -3342,11 +3343,30 @@ ol {
     left: calc(var(--left) * -1);
     bottom: calc(var(--bottom) * -1);
   }
+  .meet_sec_main .meet_member_text {
+    top: 40% !important;
+  }
+  .meet_sec_main .meet_member_text1 {
+    top: 70% !important;
+  }
 }
 .meet_sec_main .meet_member_text {
   position: absolute;
   left: 50%;
-  top: 50%;
+  top: 45%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  gap: 2.4rem;
+  -webkit-transition: opacity 0.5s ease-in-out;
+  transition: opacity 0.5s ease-in-out;
+}
+.meet_sec_main .meet_member_text1 {
+  position: absolute;
+  left: 50%;
+  top: 60%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -3361,8 +3381,16 @@ ol {
   font-weight: 500;
   letter-spacing: -0.05em;
 }
+.meet_sec_main .meet_member_text1 span {
+  white-space: nowrap;
+  font-weight: 500;
+  letter-spacing: -0.05em;
+}
 @media (max-width: 991px) {
   .meet_sec_main .meet_member_text span {
+    font-size: clamp(3rem, 15vw, 5rem);
+  }
+  .meet_sec_main .meet_member_text1 span {
     font-size: clamp(3rem, 15vw, 5rem);
   }
 }
@@ -3395,7 +3423,7 @@ ol {
 /*==========Meet Sec CSS End==========*/
 /*==========Testimonials Sec CSS==========*/
 .testimonials_sec {
-  padding-block: 4rem;
+  padding-block: 6rem;
 }
 .testimonials_sec .testimonials_shape {
   --position: 87%;
@@ -3870,10 +3898,13 @@ ol {
 }
 .help_you_sec .help_you_box .help_you_box_left {
   -webkit-box-flex: 0;
-      -ms-flex: 0 0 24rem;
-          flex: 0 0 24rem;
-  max-width: 24rem;
+      -ms-flex: 0 0 40rem;
+          flex: 0 0 40rem;
+  max-width: 40rem;
   margin-top: 1.12rem;
+}
+.help-title-mobile{
+  display: none;
 }
 @media (max-width: 991px) {
   .help_you_sec .help_you_box .help_you_box_left {
@@ -3881,6 +3912,11 @@ ol {
         -ms-flex: 0 0 19rem;
             flex: 0 0 19rem;
     max-width: 19rem;
+  }
+  .help-title-mobile{
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 10%;
   }
 }
 @media (max-width: 767px) {
@@ -3899,6 +3935,10 @@ ol {
   }
 }
 .help_you_sec .help_you_box .help_you_box_left .help_you_tab ul li {
+  font-size: 30px;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -3915,7 +3955,7 @@ ol {
   border-radius: 1.16rem;
   -webkit-transition: 0.3s;
   transition: 0.3s;
-  font-size: 1.2rem;
+  /* font-size: 1.2rem; */
   letter-spacing: -0.05em;
   padding-inline: 1.44rem 0.92rem;
   transition: 0.3s;
@@ -3923,10 +3963,23 @@ ol {
 @media (max-width: 991px) {
   .help_you_sec .help_you_box .help_you_box_left .help_you_tab ul li {
     font-size: 1.1rem;
+    padding-top: 0;
+    padding-bottom: 0;
+    min-width: 85vw;
+  }
+  .help_you_tab ul{
+    display: flex;
+    justify-content: flex-start;
+    gap: 20px;
+    overflow-x: auto;
+  }
+  .help_you_sec .help_you_box .help_you_box_right .help_you_tab_content p{
+    font-size: 15px !important;
+    line-height: 17px !important;
   }
 }
 .help_you_sec .help_you_box .help_you_box_left .help_you_tab ul li:not(:last-child) {
-  margin-bottom: 0.48rem;
+  margin-bottom: 1.48rem;
 }
 .help_you_sec .help_you_box .help_you_box_left .help_you_tab ul li:hover, .help_you_sec .help_you_box .help_you_box_left .help_you_tab ul li.help_you_tab_active {
   background: var(--white_color);
@@ -3941,9 +3994,9 @@ ol {
 }
 .help_you_sec .help_you_box .help_you_box_right {
   -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
-  max-width: 24.48rem;
+  -ms-flex: 1;
+  flex: 1;
+  max-width: 40.48rem;
 }
 @media (max-width: 1440px) {
   .help_you_sec .help_you_box .help_you_box_right {
@@ -3984,10 +4037,469 @@ ol {
 }
 .help_you_sec .help_you_box .help_you_box_right .help_you_tab_content p {
   font-weight: 300;
+  font-size: 25px;
+  line-height: 31px;
+}
+.financial-planning-timeline, .financial-planning-cta, .financial-planning-form{
+  display: none;
 }
 
 /*==========Help You Sec CSS End==========*/
+/*==========Life Planning Sec CSS Start==========*/
+.life-planning-banner{
+  padding-block: 4rem 4rem !important;
+}
+.life-planning-section {
+  background-color: rgba(255, 245, 213, 1); /* Light yellow background color */
+  padding: 6rem;
+  border-radius: 64px;
+  border: 2px solid rgba(82, 70, 51, 0.23);
+  position: relative;
+  /* max-width: 900px; */
+  margin: 0 auto;
+  text-align: center;
+}
 
+.life-planning-section .content {
+  /* max-width: 700px; */
+  margin: 0 auto;
+}
+
+.life-planning-section h2 {
+  font-size: 28px;
+  font-weight: bold;
+  color: #4a3f35;
+  margin-bottom: 20px;
+}
+section.life-planning-sec-cls {
+  padding-block: 4rem 4rem;
+}
+
+.life-planning-section p {
+  font-size: 25px;
+  color: #4a3f35;
+  line-height: 31px;
+  text-transform: inherit;
+  font-weight: 300;
+}
+
+.life-planning-section::before,
+.life-planning-section::after {
+  content: '';
+  position: absolute;
+  top: 22%;
+  width: 100%; 
+  height: 45%; 
+  background: url('/image/life-planning-left.png') no-repeat center center;
+  background-size: contain;
+  transform: translateY(-50%);
+}
+
+.life-planning-section::before {
+  left: 43%; 
+}
+
+.life-planning-section::after {
+  right: 46%; 
+  background: url('/image/life-planning-right.png') no-repeat center center;
+}
+.life-plan-title{
+  margin-bottom: 5%;
+}
+
+ @media(max-width: 991px){
+  .life-planning-section::before,
+  .life-planning-section::after {
+    background: url('/image/life-planning-left-mobile.png') no-repeat center center;
+    top: 17%;
+  }
+  .life-planning-section::after {
+    right: 36%;
+    background: url('/image/life-planning-right-mobile.png') no-repeat center center;
+  }
+  .life-planning-section::before {
+    left: 36%;
+  }
+  .life-planning-section{
+    padding: 2rem;
+  }
+  .life-plan-title{
+    font-size: 30px !important;
+    line-height: 33px !important;
+    margin-bottom: 10%;
+  }
+  .life-plan-sub-title{
+    font-size: 12px !important;
+    line-height: 17px !important;
+  }
+ }
+
+
+/*==========Life Planning Sec CSS End==========*/
+
+/*==========Our Timeline Sec CSS Start==========*/
+.timeline-pagination{
+  position: relative !important;
+  bottom: 35px;
+}
+.swiper-button-prev.timeline-next, .swiper-button-next.timeline-prev {
+  background-color: rgba(166, 127, 40, 0.27);
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+}
+.our_timeline {
+  padding-block: 8.28rem 15.2rem;
+}
+@media (max-width: 991px) {
+  .our_timeline {
+    padding-block: 8.28rem;
+  }
+  .timeline-pagination{
+    display: none;
+  }
+}
+@media (max-width: 767px) {
+  .our_timeline {
+    padding-block: 6.28rem;
+  }
+}
+@media (max-width: 575px) {
+  .our_timeline {
+    padding-block: 4.28rem;
+  }
+}
+.our_timeline .our_timeline_title {
+  margin-bottom: 5rem;
+  display: flex;
+  justify-content: space-between;
+}
+@media (max-width: 991px) {
+  .our_timeline .our_timeline_title {
+    margin-bottom: 4rem;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+@media (max-width: 575px) {
+  .our_timeline .our_timeline_title {
+    margin-bottom: 2rem;
+  }
+}
+.our_timeline .our_timeline_title .h2_title {
+  letter-spacing: -0.05em;
+  text-align: start;
+}
+.our_timeline .our_timeline_slider {
+  position: relative;
+}
+
+.our_timeline .our_timeline_slider:after {
+  content: "";
+  position: absolute;
+  top: 0.88rem;
+  left: 0;
+  width: 100%;
+  height: 0.08rem;
+  background: -webkit-gradient(linear, right top, left top, from(rgba(82, 70, 51, 0)), color-stop(19%, var(--secondary_color)), color-stop(80%, var(--secondary_color)), to(rgba(82, 70, 51, 0)));
+  background: linear-gradient(to left, rgba(82, 70, 51, 0) 0%, var(--secondary_color) 19%, var(--secondary_color) 80%, rgba(82, 70, 51, 0) 100%);
+  opacity: 1;
+}
+.our_timeline .our_timeline_slider .swiper-slide {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.our_timeline .our_timeline_slider .our_timeline_box.our_timeline_box_active .our_timeline_dot,
+.our_timeline .our_timeline_slider .our_timeline_box.our_timeline_box_active p {
+  opacity: 1;
+}
+.our_timeline .our_timeline_slider .our_timeline_box.our_timeline_box_active .outline_text {
+  -webkit-text-fill-color: var(--secondary_color);
+}
+.our_timeline .our_timeline_slider .our_timeline_box .our_timeline_dot {
+  width: 1.76rem;
+  height: 1.76rem;
+  border-radius: 50%;
+  background: rgba(217, 217, 217, 0.48);
+  -webkit-backdrop-filter: blur(0.08rem);
+          backdrop-filter: blur(0.08rem);
+  display: inline-block;
+  margin-bottom: 1.8rem;
+  opacity: 0.8;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.our_timeline .our_timeline_slider .our_timeline_box .outline_text {
+  letter-spacing: -0.05em;
+  margin-bottom: 0.44rem;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.our_timeline .our_timeline_slider .our_timeline_box p {
+  max-width: 100%;
+  font-size: 25px;
+  line-height: 1.3;
+  color: rgba(82, 70, 51, 1);
+  opacity: 1;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.our_timeline_slider {
+  counter-reset: timeline-counter; /* Initialize the counter */
+}
+
+.our_timeline_box {
+  position: relative;
+}
+.meet_member_text .outline_text{
+  -webkit-text-stroke-color: rgba(82, 70, 51, 0.36) !important;
+}
+.meet_member_text1 .outline_text{
+  -webkit-text-stroke-color: rgba(82, 70, 51, 0.36) !important;
+}
+
+.swiper-slide-active .our_timeline_box .our_timeline_dot:after{
+  background-color: rgba(255, 219, 107, 1);
+}
+.our_timeline .our_timeline_slider .our_timeline_box .our_timeline_dot:after {
+  content: counter(timeline-counter, decimal-leading-zero); /* Display the counter with leading zero */
+  counter-increment: timeline-counter; /* Increment the counter */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 2.2rem;
+  height: 2.2rem;
+  /* background: var(--secondary_color); */
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  color: black; /* Or any color you'd like for the text */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.8rem; /* Adjust the size as needed */
+}
+.our_timeline_box .h1_title{
+  font-size: 50px;
+  line-height: 91px;
+  font-weight: 600;
+}
+/*==========Our Timeline Sec CSS End==========*/
+/*==========LifePlanningHelp Start==========*/
+.life-planning-help {
+  padding-block: 4.8rem;
+}
+
+
+.planning-help-content h2 {
+  text-align: center;
+  font-size: 75px;
+  line-height: 91px;
+  font-weight: bold;
+  color: #5d5237; 
+  margin-bottom: 4rem;
+}
+
+.planning-help-content p {
+  font-size: 25px;
+  color: #555;
+  line-height: 31px;
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.zigzag {
+  top: 0;
+  left: 0;
+  background-image: url('/image/planning-help.png');
+  background-size: cover; /* or contain, depending on your design */
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  height: 100%; /* Adjust height if necessary */
+  position: absolute;
+}
+ @media(max-width: 768px) {
+  .life-planning-help {
+    padding-block: 15.8rem;
+}
+  .zigzag {
+    background-image: url('/image/lyf-helper-bg-mobile.png');
+  }
+  .planning-help-content h2 {
+    font-size: 30px;
+    line-height: 33px;
+    margin-bottom: 2rem;
+  }
+  .planning-help-content p {
+    font-size: 12px;
+    line-height: 17px;
+  }
+ }
+
+/*==========LifePlanningHelp End==========*/
+/*==========Expert Book CSS Start==========*/
+.expert_book_sec {
+  padding-block: 4.8rem;
+}
+@media (max-width: 575px) {
+  .expert_book_sec {
+    padding-block: 10.8rem 5rem;
+  }
+}
+.expert_book_sec .expert_book_slider {
+  position: relative;
+  border-radius: 2.56rem;
+  border: 0.08rem solid rgba(82, 70, 51, 0.23);
+  background: var(--light_gold_color);
+}
+@media (max-width: 575px) {
+  .expert_book_sec .expert_book_slider {
+    border-radius: 1.56rem;
+  }
+}
+.expert_book_sec .expert_book_slider .expert_book_box_shape {
+  position: absolute;
+  top: -3.6rem;
+  left: -3.6rem;
+}
+@media (max-width: 991px) {
+  .expert_book_sec .expert_book_slider .expert_book_box_shape {
+    width: 20rem;
+  }
+  .our_timeline_box .h1_title{
+    font-size: 30px;
+  }
+  .our_timeline .our_timeline_slider .our_timeline_box p{
+    font-size: 15px;
+  }
+}
+.expert_book_sec .expert_book_slider .swiper_button {
+  position: absolute;
+  top: 1.6rem;
+  right: 1.6rem;
+  z-index: 2;
+  margin: 0;
+  gap: 1.2rem;
+}
+@media (max-width: 991px) {
+  .expert_book_sec .expert_book_slider .swiper_button {
+    left: 50%;
+    right: auto;
+    -webkit-transform: translate(-50%, 0);
+            transform: translate(-50%, 0);
+    top: auto;
+    bottom: 1rem;
+  }
+}
+.expert_book_sec .expert_book_slider .expert_book_box {
+  position: relative;
+  padding: 6.8rem 8rem 5.6rem 5.4rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 5.8rem;
+  overflow: hidden;
+  align-items: center;
+}
+@media (max-width: 1199px) {
+  .expert_book_sec .expert_book_slider .expert_book_box {
+    padding: 6.8rem 4.4rem 4.6rem;
+    gap: 0.8rem;
+  }
+}
+@media (max-width: 991px) {
+  .expert_book_sec .expert_book_slider .expert_book_box {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 2.8rem 2.4rem 4.6rem;
+    gap: 1.5rem;
+  }
+}
+@media (max-width: 575px) {
+  .expert_book_sec .expert_book_slider .expert_book_box {
+    padding: 2rem 1.6rem 5rem;
+  }
+}
+.expert_book_sec .expert_book_slider .expert_book_box .expert_book_left {
+  max-width: 50%;
+  width: 100%;
+}
+@media (max-width: 991px) {
+  .expert_book_sec .expert_book_slider .expert_book_box .expert_book_left {
+    max-width: 100%;
+  }
+}
+.expert_book_sec .expert_book_slider .expert_book_box .expert_book_left .h2_title {
+  letter-spacing: -0.05em;
+  margin-bottom: 4rem;
+}
+@media (max-width: 1199px) {
+  .expert_book_sec .expert_book_slider .expert_book_box .expert_book_left .h2_title {
+    margin-bottom: 3rem;
+  }
+}
+@media (max-width: 991px) {
+  .expert_book_sec .expert_book_slider .expert_book_box .expert_book_left .h2_title {
+    margin-bottom: 3rem;
+  }
+}
+.expert_book_sec .expert_book_slider .expert_book_box .expert_book_left p {
+  max-width: 22.8rem;
+  font-weight: 300;
+  font-size: 25px;
+  line-height: 31px;
+}
+@media (max-width: 991px) {
+  .expert_book_sec .expert_book_slider .expert_book_box .expert_book_left p {
+    max-width: 100%;
+    margin-bottom: 2rem;
+    font-size: 12px;
+    line-height: 17px;
+  }
+}
+.expert_book_sec .expert_book_slider .expert_book_box .expert_book_right {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+.expert_book_sec .expert_book_slider .expert_book_box .expert_book_right .expert_book_list ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 2.12rem;
+  min-height: 3.6rem;
+}
+@media (max-width: 1199px) {
+  .expert_book_sec .expert_book_slider .expert_book_box .expert_book_right .expert_book_list ul li {
+    gap: 1.12rem;
+  }
+}
+.expert_book_sec .expert_book_slider .expert_book_box .expert_book_right .expert_book_list ul li:not(:last-child) {
+  margin-bottom: 4rem;
+}
+@media (max-width: 1199px) {
+  .expert_book_sec .expert_book_slider .expert_book_box .expert_book_right .expert_book_list ul li:not(:last-child) {
+    margin-bottom: 3rem;
+  }
+}
+@media (max-width: 991px) {
+  .expert_book_sec .expert_book_slider .expert_book_box .expert_book_right .expert_book_list ul li:not(:last-child) {
+    margin-bottom: 0.5rem;
+  }
+}
+.expert_book_sec .expert_book_slider .expert_book_box .expert_book_right .expert_book_list ul li img {
+  width: 2.6rem;
+}
+
+/*==========Expert Book CSS End==========*/
 /*==========Management Sec CSS==========*/
 .management_sec {
   padding-block: 4.2rem 12rem;
@@ -4110,6 +4622,12 @@ ol {
   letter-spacing: -0.05em;
   text-align: center;
   margin-block: 20px 100px;
+}
+@media(max-width: 768px)
+{
+  .about_management_sec .contact_form h6{
+    margin-block: 20px 50px;
+  }
 }
 
 /*==========Management Sec CSS End==========*/
@@ -4240,6 +4758,166 @@ ol {
 }
 
 /*==========Management Service Sec CSS End==========*/
+/*==========Benefits financial Planning Sec CSS Start==========*/
+.financial-planning-container-responsive {
+  display: none;
+}
+
+
+@media(max-width: 991px)
+{
+  .financial-desktop-cls{
+    display: none;
+  }
+  .financial-planning-container-responsive {
+    text-align: center;
+    margin: 0 auto;
+    /* max-width: 500px; */
+    /* padding: 20px; */
+    display: block;
+  }
+
+  .financial-planning-container-responsive h2 {
+    font-size: 24px;
+    color: #4a3f35;
+  }
+
+  .financial-planning-container-responsive p {
+    color: #a89d91;
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+
+  .financial-planning-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .financial-planning-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #fdf5e6;
+    border-radius: 20px;
+    padding: 10px 15px;
+    margin-bottom: 1rem;
+    /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
+  }
+
+  .financial-planning-item .tab-id {
+    font-size: 24px;
+    font-weight: bold;
+    color: #4a3f35;
+  }
+
+  .financial-planning-item .tab-text {
+    flex-grow: 1;
+    text-align: left;
+    margin-left: 10px;
+    font-size: 16px;
+    color: #4a3f35;
+    line-height: normal;
+  }
+
+  .financial-planning-item .read_mode_rounded img {
+    width: 24px;
+    height: 24px;
+  }
+}
+
+
+.benefits_management_service_sec {
+  padding-block: 120px 100px;
+}
+.benefits_management_service_sec .management_service_title .h2_title {
+  max-width: 928px;
+  margin-inline: auto;
+  /* margin-bottom: 124px; */
+  margin-bottom: 0;
+}
+.benefits_management_service_slider .outline_text{
+  -webkit-text-stroke-color: rgba(82, 70, 51, 0.28);
+}
+.benefits_management_service_sec .management_service_box {
+  padding: 36px 46px;
+  background: rgba(255, 219, 107, 0.29);
+  border: 0.08rem solid rgba(82, 70, 51, 0.23);
+  border-radius: 64px;
+}
+.benefits_management_service_sec .management_service_box .management_service_img {
+  width: 100%;
+  aspect-ratio: 16/9;
+  overflow: hidden;
+  border-radius: 45px;
+  margin-bottom: 46px;
+}
+.benefits_management_service_sec .management_service_box .management_service_img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+  -o-object-position: center;
+  object-position: center;
+}
+.benefits_management_service_sec .management_service_box .h3_title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 50px;
+  line-height: 1.2;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.benefits_management_service_sec .swiper-pagination {
+  margin-top: 218px;
+}
+.benedfits-para-cls{
+  font-size: 25px;
+  line-height: 31px;
+  text-transform: capitalize;
+}
+h2.benefits-title{
+  font-size: 50px;
+  line-height: 45px;
+  font-weight: 600;
+  padding: 2rem 0;
+}
+.benefits-sub-title{
+  margin-bottom: 5%;
+  text-transform: capitalize;
+}
+
+@media (max-width: 768px){
+  .benefits-heading-title{
+    font-size: 30px !important;
+    line-height: 33px;
+  }
+  .benefits-sub-title{
+    font-size: 12px;
+    line-height: 17px;
+    margin-bottom: 10%;
+    margin-top: 10%;
+  }
+  .benefits_management_service_slider .outline_text{
+    font-size: 50px;
+  }
+  h2.benefits-title{
+    font-size: 30px;
+    padding: 1rem 0;
+    line-height: 30px;
+  }
+  .benedfits-para-cls{
+    font-size: 20px;
+    line-height: 28px;
+  }
+  .benefits_management_service_sec .swiper-pagination {
+    margin-top: 2rem;
+  }
+}
+/*==========Benefits financial Planning Management Service Sec CSS End==========*/
 /*==========Management Sec CSS==========*/
 .management_sec {
   padding-block: 4.2rem 12rem;
@@ -4265,7 +4943,7 @@ ol {
   width: 100%;
 }
 .management_sec .management_sec_title {
-  max-width: 36rem;
+  /* max-width: 36rem; */
   margin: 0 auto;
   margin-bottom: 6.08rem;
 }
@@ -4279,6 +4957,7 @@ ol {
   font-weight: normal;
   letter-spacing: -0.05em;
   margin-bottom: 1.2rem;
+  font-weight: 600;
 }
 @media (max-width: 991px) {
   .management_sec .management_sec_title .h2_title {
@@ -4289,6 +4968,8 @@ ol {
   color: var(--primary_color);
   letter-spacing: -0.05em;
   font-weight: 300;
+  font-weight: 25px;
+  /* line-height: ; */
 }
 .management_sec .contact_form {
   background: rgba(195, 172, 116, 0.37);
@@ -4486,14 +5167,229 @@ ol {
 }
 
 /*==========Career Page Content CSS End==========*/
+.wizard-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 5%;
+}
+.wizard-question-section h2 {
+  margin-bottom: 1.2rem;
+  font-size: 75px;
+  font-weight: 600;
+  line-height: 91px;
+}
+.wizard-question-section p {
+  margin-bottom: 1.6rem;
+  font-size: 35px;
+  font-weight: 600;
+  line-height: 35px;
+}
+.steps-indicator {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.step {
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  border-radius: 50%;
+  background-color: #fff;
+  margin: 0 5px;
+  text-align: center;
+  border: 1px solid rgba(82, 70, 51, 0.18);
+  cursor: pointer;
+  color: rgba(82, 70, 51, 1);
+}
+
+.step.active {
+  background-color: rgba(82, 70, 51, 0.19);
+  color: rgba(82, 70, 51, 1);
+}
+
+.wizard-step-section {
+  display: none;
+}
+
+.wizard-step-section:first-child {
+  display: block;
+}
+
+.wizard-question-section {
+  text-align: start;
+}
+.wizard-form-options{
+  display: flex;
+  justify-content: space-between;
+  gap: 25px;
+}
+.wizard-option-btn {
+  display: flex;
+  padding: 20px 20px;
+  margin: 10px 0;
+  background-color: rgba(82, 70, 51, 0.19)    ;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  text-align: left;
+  width: 100%;
+  align-items: center;
+}
+span.arrow-image {
+  margin-left: 10px;
+  /* margin-top: 10px; */
+}
+
+.wizard-option-btn.selected {
+  background-color: rgba(195, 172, 116, 0.27);
+  color: rgba(82, 70, 51, 1);
+}
+
+.wizard-option-label {
+  margin-right: 10px;
+  font-weight: bold;
+  font-size: 50px;
+  color: rgba(82, 70, 51, 1);
+  line-height: 91px;
+  font-weight: 600;
+  position: relative;
+    /* top: 8px; */
+}
+
+.wizard-next-btn, .wizard-prev-btn {
+  display: flex;
+  padding: 30px 60px;
+  /* margin-top: 5%; */
+  margin-top: 20%;
+  background-color: rgba(82, 70, 51, 1);
+  color: #fff;
+  border: none;
+  border-radius: 99px;
+  cursor: pointer;
+  margin-right: 10px;
+  font-size: 30px;
+}
+.submit-btn-cls{
+  margin-top: auto;
+}
+.wizard-btn-flex {
+  display: flex;
+}
+.wizard-prev-btn span img{
+  margin-left: 5px;
+}
+.wizard-steps h1{
+  line-height: 91px;
+  font-size: 75px;
+  font-weight: 600;
+}
+.wizard-form-section {
+  padding-block: 4.2rem 5rem;
+}
+.arrow {
+  margin-left: 5px;
+}
+.success-message {
+  display: none;
+  padding: 20px;
+  margin-top: 20px;
+  background-color: #d4edda;
+  color: #155724;
+  border: 1px solid #c3e6cb;
+  border-radius: 5px;
+}
+.wizard-option-label b {
+  margin-right: 10px;
+}
+.arrow-prev-img{
+  margin-right: 10px;
+  /* margin-top: 10px; */
+}
+@media(max-width:768px){
+  .wizard-option-label{
+    top: unset;
+    line-height: unset;
+  }
+  .wizard-next-btn{
+    margin-top: 5%;
+  }
+  .wizard-form-options{
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .wizard-btn-flex{
+    display: flex;
+    flex-direction: column;
+  }
+  .wizard-header{
+      flex-direction: column;
+  }
+  .wizard-form-section {
+    padding-block: 4.2rem 0rem;
+  }
+  .wizard-steps {
+    margin-bottom: 5%;
+  }
+  .wizard-steps h1 {
+    line-height: 33px;
+    font-size: 30px;
+    white-space: nowrap;
+  }
+  .wizard-question-section p{
+    font-size: 15px;
+    line-height: 20px;
+  }
+  .wizard-container {
+    padding-block: 1.08rem 5.6rem;
+  }
+  .wizard-question-section h2{
+    display: none;
+  }
+  .wizard-option-btn{
+    padding: 15px 20px;
+    font-size: 15px;
+    width: 45%;
+    line-height: 20px;
+  }
+  .wizard-option-btn span{
+    font-size: 15px;
+  }
+  span.wizard-option-label {
+    font-size: 25px;
+}
+.wizard-option-label b {
+  margin-right: 0px;
+}
+.steps-indicator{
+  justify-content: flex-start;
+  width: 100%;
+}
+  .wizard-next-btn, .wizard-prev-btn{
+    font-size: 20px;
+    align-items: center;
+    width: 100%;
+    padding: 10px 20px;
+    justify-content: center;
+  }
+  .wizard-next-flex{
+    width: 100%;
+  }
+ 
+  
+}
 
 /*==========Life Sec CSS Start==========*/
+.need-plan-mobile{
+  display: none;
+}
 .life_sec {
   padding-block: 4.8rem;
 }
 @media (max-width: 991px) {
   .life_sec {
-    padding-block: 0;
+    padding-block: 0 5rem;
   }
 }
 .life_sec .life_sec_shape {
@@ -4511,12 +5407,28 @@ ol {
 @media (max-width: 991px) {
   .life_sec .h2_title {
     margin-bottom: 2.8rem;
+    /* white-space: nowrap; */
+    font-size: 30px;
+  }
+  
+}
+@media (max-width: 768px) {
+  .responsive-br {
+    display: none;
+  }
+  .need-plan-desktop{
+    display: none;
+  }
+  .need-plan-mobile{
+    display: block;
   }
 }
 .life_sec .life_sec_slider {
   max-width: 51.4rem;
   margin: 0 auto;
 }
+
+
 .life_sec .life_sec_slider .life_slider_box {
   text-align: center;
   position: relative;
@@ -4695,6 +5607,59 @@ ol {
 }
 
 /*==========Open Job Sec CSS End==========*/
+/*==========Aspect financial Sec CSS start==========*/
+.aspect-financial-planning {
+  text-align: center;
+}
+
+.aspect-chart-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.aspect-labels {
+  position: absolute;
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  grid-gap: 10px;
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+}
+
+.aspect-labels p {
+  margin: 0;
+  font-size: 14px;
+}
+.aspect_sub_title{
+  font-size: 25px;
+  line-height: 31px;
+  font-weight: 300;
+  text-transform: capitalize;
+  margin-bottom: 5%;
+}
+section.aspect-financial-section {
+  padding-block: 10rem;
+}
+
+@media(max-width:768px){
+  section.aspect-financial-section{
+    padding-block: 2rem;
+  }
+  .aspect_sub_title{
+    font-size: 12px;
+    line-height: 17px;
+    margin-bottom: 10%;
+  }
+  .aspect_heading {
+    font-size: 30px !important;
+    line-height: 33px;
+}
+}
+/*==========Aspect financial Sec CSS End==========*/
 
 
 
@@ -4726,11 +5691,13 @@ ol {
   transition: 0.50s all;
   display: flex;
   flex-direction: column;
+  align-items: flex-start;
 }
 .navbar-links li.navbar-dropdown .dropdown a {
   padding-top: 10px;
   padding-bottom: 10px;
   font-weight: 400;
+  padding-left: 10px;
 }
 .navbar-dropdown .dropdown a:hover {
   /* padding-left: 30px; */
@@ -4812,6 +5779,7 @@ ol {
   background: var(--light_gold_color);
   -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
+  z-index: 1;
 }
 .meet_sec .video_container video#video1 {
   position: absolute;
@@ -5568,11 +6536,18 @@ ol {
     padding-block: 6.08rem 16.6rem;
     padding-bottom: 0rem;
   }
+  .clarity_box .clarity_box_content {
+    padding: 1.5rem 1rem 2rem;
+  }
+ 
 }
 
 @media (max-width: 767px) {
   .home_clients .home_clients_slider {
       overflow: hidden;
+  }
+  .financial-report-sec{
+    padding-block: 2rem 2rem !important;
   }
   .our_presence .contact_info_box {
     display: -webkit-box;
@@ -5587,6 +6562,9 @@ ol {
   }
 }
 @media (max-width: 575px) {
+  .financial-report-sec{
+    padding-block: 2rem 2rem;
+  }
   .career_banner {
     padding-block: 3.08rem 10.6rem;
     padding-bottom: 0rem;
@@ -5645,14 +6623,13 @@ ol {
   .management_service_sec .swiper-pagination {
     margin-top: 2.72rem;
   }
+  
 }
 @media (max-width: 400px) {
   .clarity_box .clarity_shape {
     left: -13rem;
   }
-  .clarity_box .clarity_box_content {
-    padding: 1.5rem 1rem 2rem;
-  }
+  
 }
 
 
@@ -5818,6 +6795,12 @@ input.search-field-cls::placeholder {
   height: 10px;
   transform: unset;
 }
+.financial-report-sec{
+  padding-block: 202px 190px;
+}
+.success-message{
+  font-size: 25px;
+}
 
 
 
@@ -5827,10 +6810,12 @@ input.search-field-cls::placeholder {
 
 
 @media(max-width:768px){
-  /* .meet_sec_main .meet_member{
-    width: 100%;
-    
-  } */
+  .success-message{
+    font-size: 15px;
+  }
+  .meet_sec_main{
+    padding-block: 0rem;
+  }
   .form_input_wp  select{ font-size: 12px;}
   .home-btn-cls-mobile{
     margin-top: 8rem;
@@ -6055,4 +7040,71 @@ input.search-field-cls::placeholder {
     top: 65% !important;
     left: -2% !important;
   }
+  
+
+
+
+
+
+  .vertical-line-cls {
+    border-left: 2px solid black;
+    height: 200px;
+  }
+
+  .vertical-slider-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 500px; /* Adjust width as needed */
+    margin: 50px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .vertical-slider-content {
+    text-align: center;
+  }
+  
+  .vertical-slider-nav {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+  
+  .vertical-slider-nav button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #4CAF50; /* Green */
+    color: white;
+    cursor: pointer;
+  }
+  
+  .vertical-slider-nav button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+  }
+  
+  .slider-progress {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .vertical-slider-dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #ccc;
+    margin: 0 5px;
+  }
+  
+  .vertical-slider-dot.active {
+    background-color: #4CAF50; /* Green */
+  }
+
 }
+
+
+
