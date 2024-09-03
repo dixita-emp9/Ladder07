@@ -4706,8 +4706,10 @@ section.life-planning-sec-cls {
 .cta_sec_wp .cta_left_content {
   -webkit-box-flex: 0;
   -ms-flex: 0 0 670px;
-  flex: 0 0 670px;
-  max-width: 670px;
+  /* flex: 0 0 670px;
+  max-width: 670px; */
+  flex: 0 0 26.8rem;
+  max-width: 26.8rem;
 }
 .cta_sec_wp .cta_left_content .h2_title {
   font-weight: normal;
