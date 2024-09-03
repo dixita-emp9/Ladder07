@@ -5990,8 +5990,14 @@ section.aspect-financial-section {
     max-width: 1140px;
   }
     .management_sec .contact_form{
-      max-width: 49.2rem !important;
-    }
+    max-width: 49.2rem !important;
+  }
+  section.aspect-financial-section {
+    padding-block: 3rem;
+  }
+  .benefits_management_service_sec {
+    padding-block: 7rem;
+  }
 }
 
 @media (max-width: 1200px) {
