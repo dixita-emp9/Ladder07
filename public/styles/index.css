@@ -4684,11 +4684,7 @@ section.life-planning-sec-cls {
   margin: 0 auto;
 }
 
-@media(max-width: 1366px){
-  .management_sec .contact_form{
-    max-width: 49.2rem;
-  }
-}
+
 
 /*==========Management Sec CSS End==========*/
 /*==========CTA Sec CSS==========*/
@@ -5993,6 +5989,9 @@ section.aspect-financial-section {
   .container{
     max-width: 1140px;
   }
+    .management_sec .contact_form{
+      max-width: 49.2rem;
+    }
 }
 
 @media (max-width: 1200px) {
