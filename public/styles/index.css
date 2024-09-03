@@ -5990,7 +5990,7 @@ section.aspect-financial-section {
     max-width: 1140px;
   }
     .management_sec .contact_form{
-      max-width: 49.2rem;
+      max-width: 49.2rem !important;
     }
 }
 
