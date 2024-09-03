@@ -6016,6 +6016,17 @@ section.aspect-financial-section {
   .our_timeline {
     padding-block: 4.8rem 5.8rem;
   }
+  .position-planning-cls{
+    top: 60% !important;
+  }
+  .position-financial-cls{
+    top: 20% !important;
+    left: -33% !important;
+  }
+  .position-wealth-cls{
+    right: -38% !important;
+    bottom: 65% !important;
+  }
 }
 
 @media (max-width: 1200px) {
