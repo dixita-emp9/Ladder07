@@ -5998,6 +5998,12 @@ section.aspect-financial-section {
   .benefits_management_service_sec {
     padding-block: 7rem;
   }
+  .expert_book_sec {
+    padding-block: 3rem;
+  }
+  .life-planning-banner {
+      padding-block: 3rem 3rem !important;
+  } 
 }
 
 @media (max-width: 1200px) {
