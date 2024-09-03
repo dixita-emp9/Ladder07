@@ -3647,6 +3647,11 @@ ol {
 .card_sec {
   padding-block: 6.8rem;
 }
+@media(max-width: 1366px){
+  .card_sec {
+    padding-block: 4rem;
+  }
+}
 .card_sec .card_box {
   padding: 47px 80px 70px;
   background: #c3ac74;
@@ -4677,6 +4682,12 @@ section.life-planning-sec-cls {
   padding: 60px;
   max-width: 980px;
   margin: 0 auto;
+}
+
+@media(max-width: 1366px){
+  .management_sec .contact_form{
+    max-width: 49.2rem;
+  }
 }
 
 /*==========Management Sec CSS End==========*/
