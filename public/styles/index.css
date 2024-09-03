@@ -5970,6 +5970,9 @@ section.aspect-financial-section {
 .clarity_box_content .sec_btn{
   font-weight: 400;
 }
+.our_timeline {
+  padding-block: 4.8rem 5.8rem;
+}
 @media(max-width: 1480px){
   .container{
     max-width: 1140px;
@@ -6004,6 +6007,15 @@ section.aspect-financial-section {
   .life-planning-banner {
       padding-block: 3rem 3rem !important;
   } 
+  .life_sec {
+    padding-block: 4rem;
+  }
+  .life_sec_slider .swiper-pagination{
+    margin-top: 2.8rem;
+  }
+  .our_timeline {
+    padding-block: 4.8rem 5.8rem;
+  }
 }
 
 @media (max-width: 1200px) {
