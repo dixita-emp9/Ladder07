@@ -376,8 +376,8 @@ export default function Home() {
 				<div className="banner_content row ">
 
 						<div className="col-md-5 tex-start">
-							<h3 className="sub_title home_sub_title">Come Let Us Build A Financial Blueprint For A Secure Future</h3>
-							<h1 className="h1_title home-page-title">Your Compass For Financial Well-Being</h1>
+							<h3 className="sub_title fadeup-animation delay_1_6 home_sub_title">Come Let Us Build A Financial Blueprint For A Secure Future</h3>
+							<h1 className="h1_title fadeup-animation delay_1_8 home-page-title">Your Compass For Financial Well-Being</h1>
 							
 							<div className="banner_btn_wp home-btn-cls-desktop">
 								<a href="#" className="sec_btn" title="Connect Now"><div className="text-btn">Connect Now </div> <Image
@@ -418,149 +418,151 @@ export default function Home() {
 	
 	
 	<section data-scroll-section className="our_work">
-		<div className="our_work_title text_center">
-			<h2 className="h2_title">We Work In Your Best Interests Above All Else</h2>
-		</div>
-		<div className="swiper work_tab">
-			<div className="swiper-wrapper">
-				<div className="swiper-slide">
-					<div className="work_tab_box work_tab_active">
-						<div className="work_tab_box_title">
-							<h3 className="h3_title"><span className="h1_title outline_text">01</span> <b>Financial Planning</b>
-							</h3>
-						</div>
+		<div className="">
+			<div className="our_work_title text_center">
+				<h2 className="h2_title">We Work In Your Best Interests Above All Else</h2>
+			</div>
+			<div className="swiper work_tab">
+				<div className="swiper-wrapper">
+					<div className="swiper-slide">
+						<div className="work_tab_box work_tab_active">
+							<div className="work_tab_box_title">
+								<h3 className="h3_title"><span className="h1_title outline_text">01</span> <b>Financial Planning</b>
+								</h3>
+							</div>
 
-						<div className="work_tab_box_content">
-							<div>
+							<div className="work_tab_box_content">
+								<div>
+									<div className="work_tab_main_content">
+										<div className="work_tab_box_img">
+											<Image src="/image/workimg.jpg" alt="Life Planning" width={540}
+														height={592} />
+										</div>
+										<div className="work_tab_box_text">
+											<h4 className="h1_title outline_text">01</h4>
+											<h3 className="h3_title">Financial Planning</h3>
+											<ul>
+												<li>
+													<Image src="/image/right_arrow.svg" alt="Arrow" width={16}
+														height={16} />
+
+	Understanding You & Your Goals
+												</li>
+												<li>
+													<Image src="/image/right_arrow.svg" alt="Arrow" width={16}
+														height={16} />
+
+	Blueprint For A Secure Future
+												</li>
+												<li>
+													<Image src="/image/right_arrow.svg" alt="Arrow" width={16}
+														height={16} />
+
+	Clarity & Peace Of Mind Assured
+												</li>
+											</ul>
+
+											<a href="#" className="sec_btn" title="Read More"><div className="text-btn">Read More </div> <Image
+													src="/image/right_arrow.svg"  width={25}
+													height={25} /></a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div className="work_tab_box">
+							<div className="work_tab_box_title">
+								<h3 className="h3_title"><span className="h1_title outline_text">02</span> <b>Life Planning</b></h3>
+							</div>
+
+							<div className="work_tab_box_content">
+								<div>
 								<div className="work_tab_main_content">
 									<div className="work_tab_box_img">
-										<Image src="/image/workimg.jpg" alt="Life Planning" width={540}
+										<Image src="/image/workimg.png" alt="Life Planning" width={540}
 													height={592} />
 									</div>
 									<div className="work_tab_box_text">
-										<h4 className="h1_title outline_text">01</h4>
-										<h3 className="h3_title">Financial Planning</h3>
+										<h4 className="h1_title outline_text">02</h4>
+										<h3 className="h3_title">Life Planning</h3>
 										<ul>
 											<li>
 												<Image src="/image/right_arrow.svg" alt="Arrow" width={16}
 													height={16} />
 
-Understanding You & Your Goals
+	Envision The Life you want
 											</li>
 											<li>
 												<Image src="/image/right_arrow.svg" alt="Arrow" width={16}
 													height={16} />
 
-Blueprint For A Secure Future
+	Action To Make It A Reality
 											</li>
 											<li>
 												<Image src="/image/right_arrow.svg" alt="Arrow" width={16}
-													height={16} />
+													height={16}/>
 
-Clarity & Peace Of Mind Assured
+	Delight & Fulfilment In Life
 											</li>
 										</ul>
 
 										<a href="#" className="sec_btn" title="Read More"><div className="text-btn">Read More </div> <Image
-												src="/image/right_arrow.svg"  width={16}
-												height={16} /></a>
+												src="/image/right_arrow.svg" width={25}
+												height={25}/></a>
+									</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div className="work_tab_box">
+							<div className="work_tab_box_title">
+								<h3 className="h3_title"><span className="h1_title outline_text">03</span> <b>Wealth Management</b>
+								</h3>
+							</div>
+
+							<div className="work_tab_box_content">
+								<div>
+								<div className="work_tab_main_content">
+									<div className="work_tab_box_img">
+										<Image src="/image/workimg.jpg" alt="Life Planning"  width={550}
+													height={550} />
+									</div>
+									<div className="work_tab_box_text">
+										<h4 className="h1_title outline_text">02</h4>
+										<h3 className="h3_title">Wealth Management</h3>
+										<ul>
+											<li>
+												<Image src="/image/right_arrow.svg" alt="Arrow"  width={16}
+													height={16}  />
+
+	Align Money To Meet Goals
+											</li>
+											<li>
+												<Image src="/image/right_arrow.svg" alt="Arrow"  width={16}
+													height={16}  />
+
+	Optimise & Diversify Portfolio
+											</li>
+											<li>
+												<Image src="/image/right_arrow.svg" alt="Arrow"  width={16}
+													height={16}  />
+
+	Meet Goals & Create Wealth
+											</li>
+										</ul>
+
+										<a href="#" className="sec_btn" title="Read More"><div className="text-btn">Read More </div><Image
+												src="/image/right_arrow.svg"   width={25}
+												height={25}  /></a>
+									</div>
 									</div>
 								</div>
 							</div>
 						</div>
 					</div>
-					<div className="work_tab_box">
-						<div className="work_tab_box_title">
-							<h3 className="h3_title"><span className="h1_title outline_text">02</span> <b>Life Planning</b></h3>
-						</div>
-
-						<div className="work_tab_box_content">
-							<div>
-							<div className="work_tab_main_content">
-								<div className="work_tab_box_img">
-									<Image src="/image/workimg.png" alt="Life Planning" width={540}
-												height={592} />
-								</div>
-								<div className="work_tab_box_text">
-									<h4 className="h1_title outline_text">02</h4>
-									<h3 className="h3_title">Life Planning</h3>
-									<ul>
-										<li>
-											<Image src="/image/right_arrow.svg" alt="Arrow" width={16}
-												height={16} />
-
-Envision The Life you want
-										</li>
-										<li>
-											<Image src="/image/right_arrow.svg" alt="Arrow" width={16}
-												height={16} />
-
-Action To Make It A Reality
-										</li>
-										<li>
-											<Image src="/image/right_arrow.svg" alt="Arrow" width={16}
-												height={16}/>
-
-Delight & Fulfilment In Life
-										</li>
-									</ul>
-
-									<a href="#" className="sec_btn" title="Read More"><div className="text-btn">Read More </div> <Image
-											src="/image/right_arrow.svg" width={16}
-											height={16}/></a>
-								</div>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div className="work_tab_box">
-						<div className="work_tab_box_title">
-							<h3 className="h3_title"><span className="h1_title outline_text">01</span> <b>Wealth Management</b>
-							</h3>
-						</div>
-
-						<div className="work_tab_box_content">
-							<div>
-							<div className="work_tab_main_content">
-								<div className="work_tab_box_img">
-									<Image src="/image/workimg.jpg" alt="Life Planning"  width={550}
-												height={550} />
-								</div>
-								<div className="work_tab_box_text">
-									<h4 className="h1_title outline_text">02</h4>
-									<h3 className="h3_title">Wealth Management</h3>
-									<ul>
-										<li>
-											<Image src="/image/right_arrow.svg" alt="Arrow"  width={16}
-												height={16}  />
-
-Align Money To Meet Goals
-										</li>
-										<li>
-											<Image src="/image/right_arrow.svg" alt="Arrow"  width={16}
-												height={16}  />
-
-Optimise & Diversify Portfolio
-										</li>
-										<li>
-											<Image src="/image/right_arrow.svg" alt="Arrow"  width={16}
-												height={16}  />
-
-Meet Goals & Create Wealth
-										</li>
-									</ul>
-
-									<a href="#" className="sec_btn" title="Read More"><div className="text-btn">Read More </div><Image
-											src="/image/right_arrow.svg"   width={16}
-											height={16}  /></a>
-								</div>
-								</div>
-							</div>
-						</div>
-					</div>
 				</div>
+				<div className="swiper-scrollbar"></div>
 			</div>
-			<div className="swiper-scrollbar"></div>
 		</div>
 	</section>
 
@@ -1687,7 +1689,7 @@ Meet Goals & Create Wealth
 					<Image src="/image/black_right_arrow.svg" width={16} height={16}  />
 				</div>
 
-				<div className="checkbox_input_wp">
+				<div className="checkbox_input_wp contact-dot-cls">
 					<input type="checkbox" name="term" id="trem"/>
 					<label htmlFor="trem">By clicking the above button, you agree to our Terms of Service and confirm that you have read and understood our Privacy Policy</label>
 				</div>

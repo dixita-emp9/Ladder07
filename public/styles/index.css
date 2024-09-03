@@ -12,6 +12,108 @@
   font-style: normal;
   font-display: swap;
 }
+
+.delay_0_1 {
+  -webkit-transition-delay: 0.1s !important;
+          transition-delay: 0.1s !important;
+}
+
+.delay_0_2 {
+  -webkit-transition-delay: 0.2s !important;
+          transition-delay: 0.2s !important;
+}
+
+.delay_0_3 {
+  -webkit-transition-delay: 0.3s !important;
+          transition-delay: 0.3s !important;
+}
+
+.delay_0_4 {
+  -webkit-transition-delay: 0.4s !important;
+          transition-delay: 0.4s !important;
+}
+
+.delay_0_5 {
+  -webkit-transition-delay: 0.5s !important;
+          transition-delay: 0.5s !important;
+}
+
+.delay_0_6 {
+  -webkit-transition-delay: 0.6s !important;
+          transition-delay: 0.6s !important;
+}
+
+.delay_0_7 {
+  -webkit-transition-delay: 0.7s !important;
+          transition-delay: 0.7s !important;
+}
+
+.delay_0_8 {
+  -webkit-transition-delay: 0.8s !important;
+          transition-delay: 0.8s !important;
+}
+
+.delay_0_9 {
+  -webkit-transition-delay: 0.9s !important;
+          transition-delay: 0.9s !important;
+}
+
+.delay_1 {
+  -webkit-transition-delay: 1s !important;
+          transition-delay: 1s !important;
+}
+
+.delay_1_1 {
+  -webkit-transition-delay: 1.1s !important;
+          transition-delay: 1.1s !important;
+}
+
+.delay_1_2 {
+  -webkit-transition-delay: 1.2s !important;
+          transition-delay: 1.2s !important;
+}
+
+.delay_1_3 {
+  -webkit-transition-delay: 1.3s !important;
+          transition-delay: 1.3s !important;
+}
+
+.delay_1_4 {
+  -webkit-transition-delay: 1.4s !important;
+          transition-delay: 1.4s !important;
+}
+
+.delay_1_5 {
+  -webkit-transition-delay: 1.5s !important;
+          transition-delay: 1.5s !important;
+}
+
+.delay_1_6 {
+  -webkit-transition-delay: 1.6s !important;
+          transition-delay: 1.6s !important;
+}
+
+.delay_1_7 {
+  -webkit-transition-delay: 1.7s !important;
+          transition-delay: 1.7s !important;
+}
+
+.delay_1_8 {
+  -webkit-transition-delay: 1.8s !important;
+          transition-delay: 1.8s !important;
+}
+
+.delay_1_9 {
+  -webkit-transition-delay: 1.9s !important;
+          transition-delay: 1.9s !important;
+}
+
+.delay_2 {
+  -webkit-transition-delay: 2s !important;
+          transition-delay: 2s !important;
+}
+/*==========Common CSS ==========*/
+
 .mt_300 {
   margin-top: 300px !important;
 }
@@ -2611,10 +2713,16 @@ ol {
     180deg,
     var(--light_gold_color) 0%,
     var(--white_color) 100%
-  );
-  padding-block: 202px 390px;
-  z-index: 1;
-}
+    );
+    /* padding-block: 202px 390px; */
+    padding-block: 10rem 13rem;
+    z-index: 1;
+  }
+  @media(max-width: 1366px){
+    .main_banner{
+      padding-block: 7rem 10rem;
+    }
+  }
 .main_banner .banner_shape {
   --position: 75%;
 }
@@ -2693,6 +2801,7 @@ ol {
   /* padding: 35px; */
   padding: 1.4rem;
   cursor: pointer;
+  justify-content: center;
 }
 .our_work .work_tab .work_tab_box .work_tab_box_title .h3_title {
   -webkit-writing-mode: vertical-rl;
@@ -2814,12 +2923,15 @@ ol {
 }
 .compliance .compliance_title .h2_title {
   letter-spacing: -0.05em;
+  font-weight: 500;
 }
 .compliance .compliance_title p {
   max-width: 530px;
   margin: 0 auto;
   font-weight: 300;
   color: var(--primary_color);
+  font-size: 25px;
+  margin-top: 1rem;
 }
 .compliance .compliance_wp {
   display: -webkit-box;
@@ -2954,6 +3066,13 @@ ol {
   -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
   overflow: hidden;
+  font-size: 25px;
+}
+.home_clients_box_content span{
+  font-size: 100px;
+}
+.home_clients_box_content p{
+  font-size: 25px;
 }
 
 /*==========Compliance CSS End==========*/
@@ -2962,7 +3081,7 @@ ol {
   padding-block: 4.6rem;
 }
 .home_clients .home_clients_title {
-  margin-bottom: 185px;
+  margin-bottom: 7.4rem;
 }
 .home_clients .home_clients_title .h2_title {
   font-size: 65px;
@@ -3362,6 +3481,7 @@ ol {
   gap: 2.4rem;
   -webkit-transition: opacity 0.5s ease-in-out;
   transition: opacity 0.5s ease-in-out;
+  z-index: 1;
 }
 .meet_sec_main .meet_member_text1 {
   position: absolute;
@@ -3380,6 +3500,7 @@ ol {
   white-space: nowrap;
   font-weight: 500;
   letter-spacing: -0.05em;
+  /* z-index: 1; */
 }
 .meet_sec_main .meet_member_text1 span {
   white-space: nowrap;
@@ -4957,7 +5078,8 @@ h2.benefits-title{
   font-weight: normal;
   letter-spacing: -0.05em;
   margin-bottom: 1.2rem;
-  font-weight: 600;
+  /* font-weight: 600; */ /* home page*/
+  font-weight: 400;
 }
 @media (max-width: 991px) {
   .management_sec .management_sec_title .h2_title {
@@ -4968,7 +5090,7 @@ h2.benefits-title{
   color: var(--primary_color);
   letter-spacing: -0.05em;
   font-weight: 300;
-  font-weight: 25px;
+  font-size: 25px;
   /* line-height: ; */
 }
 .management_sec .contact_form {
@@ -5306,6 +5428,12 @@ span.arrow-image {
 .arrow-prev-img{
   margin-right: 10px;
   /* margin-top: 10px; */
+}
+.testimonials_author_info p {
+  font-size: 25px;
+}
+.testimonials_content  p{
+  font-size: 25px;
 }
 @media(max-width:768px){
   .wizard-option-label{
@@ -5754,13 +5882,14 @@ section.aspect-financial-section {
 }
 .our_number_sec .our_number_slider .swiper-slide .our_number_slide .our_number_content p{
   color: var(--primary_color);
-    max-width: 10.2rem;
+    max-width: 12.2rem;
     font-weight: 300;
     padding-left: 1.6rem;
     margin-top: 0.2rem;
     opacity: 0.17;
     -webkit-transition: 0.3s;
     transition: 0.3s;
+    font-size: 25px;
 }
 .meet_sec .video_container {
   position: absolute;
@@ -5820,10 +5949,36 @@ section.aspect-financial-section {
 .our_presence .contact_info_box .contact_info ul li .contact_info_icon img {
   width: 2.6rem;
 }
-
+.our_work .work_tab .work_tab_box .work_tab_box_content .work_tab_box_text ul li{
+  font-size: 25px;
+}
+.work_tab_box_text .text-btn{
+  font-size: 30px;
+}
+.clarity_box_content p{
+  font-size: 25px;
+}
+.clarity_box_content .sec_btn{
+  font-weight: 400;
+}
+@media(max-width: 1480px){
+  .container{
+    max-width: 1140px;
+  }
+}
+@media(max-width: 1440px){
+  .container{
+    max-width: 1140px;
+  }
+}
 @media (max-width: 1400px) {
   .compliance .compliance_wp .compliance_box_content .h2_title {
       font-size: 2.5rem;
+  }
+}
+@media(max-width: 1366px){
+  .container{
+    max-width: 1140px;
   }
 }
 
@@ -5905,6 +6060,12 @@ section.aspect-financial-section {
 }
 
 @media (max-width: 991px) {
+  .our_work {
+    padding-block: 5.2rem 5.2rem;
+}
+.our_work .work_tab .work_tab_box .work_tab_box_content .work_tab_box_text ul li {
+  font-size: 15px;
+}
   .sec_btn img {
     width: 1.6rem;
   }
@@ -6463,6 +6624,7 @@ section.aspect-financial-section {
     position: absolute;
     bottom: 1.76rem;
     left: 1.2rem;
+    font-size: 15px;
   }
   .our_work .work_tab .work_tab_box .work_tab_box_content {
     grid-template-columns: auto;

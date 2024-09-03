@@ -270,7 +270,7 @@ export default function About() {
 		</div>
 	</section>
 
-	<section data-scroll-section className="management_service_sec">
+	{/* <section data-scroll-section className="management_service_sec">
 		<div className="container">
 			<div className="management_service_title text_center">
 				<h2 className="h2_title">Our total wealth management service</h2>
@@ -317,6 +317,376 @@ export default function About() {
 					</div>
 				</div>
 				<div className="swiper-pagination"></div>
+			</div>
+		</div>
+	</section> */}
+
+<section data-scroll-section className="testimonials_sec">
+		{/* <div className="testimonials_shape">
+			<Image src="/image/global_shape.png" className="testimonials_left_shape"  width={787}
+												height={814} />
+			<Image src="/image/global_shape.png" className="testimonials_right_shape"  width={787}
+												height={814} />
+		</div> */}
+
+			<div className="testimonials_shape">
+				<div className="animated_svg_wp testimonials_left_shape">
+					<svg className="animated_svg" viewBox="0 0 1046 966" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<g opacity="0.2">
+							<path d="M24 149L847.672 149C848.337 149 848.817 149.637 848.633 150.276L624.99 928"
+								stroke="url(#paint0_diamond_2131_1987)" strokeWidth={76} strokeLinecap="round" />
+							<path d="M282 63H881.69C926.916 63 959.541 106.328 947.042 149.793L747.99 842"
+								stroke="url(#paint1_diamond_2131_1987)" strokeWidth={48} strokeLinecap="round" />
+							<path d="M126.5 9H906.452C976.316 9 1026.7 75.9568 1007.34 143.087L821.99 786"
+								stroke="url(#paint2_linear_2131_1987)" strokeWidth={17} strokeLinecap="round" />
+						</g>
+						<defs>
+							<radialGradient id="paint0_diamond_2131_1987" cx="0" cy="0" r="1"
+								gradientUnits="userSpaceOnUse"
+								gradientTransform="translate(831.5 149) rotate(132.423) scale(1494.21 600.371)">
+								<stop stopColor="#7C5224" />
+								<stop offset="1" stopColor="#7C5224" stopOpacity={0}/>
+							</radialGradient>
+							<radialGradient id="paint1_diamond_2131_1987" cx="0" cy="0" r="1"
+								gradientUnits="userSpaceOnUse"
+								gradientTransform="translate(931.5 113.5) rotate(146.913) scale(909.481 805.574)">
+								<stop stopColor="#7C5224" />
+								<stop offset="1" stopColor="#7C5224"  stopOpacity={0} />
+							</radialGradient>
+							<linearGradient id="paint2_linear_2131_1987" x1="977" y1="40.5" x2="706" y2="241.5"
+								gradientUnits="userSpaceOnUse">
+								<stop stopColor="#7C5224" />
+								<stop offset="1" stopColor="#7C5224"  stopOpacity={0} />
+							</linearGradient>
+						</defs>
+					</svg>
+				</div>
+				<div className="animated_svg_wp testimonials_right_shape">
+					<svg className="animated_svg" viewBox="0 0 1046 966" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<g opacity="0.2">
+							<path d="M24 149L847.672 149C848.337 149 848.817 149.637 848.633 150.276L624.99 928"
+								stroke="url(#paint0_diamond_2131_1987)" strokeWidth={76} strokeLinecap="round" />
+							<path d="M282 63H881.69C926.916 63 959.541 106.328 947.042 149.793L747.99 842"
+								stroke="url(#paint1_diamond_2131_1987)" strokeWidth={48} strokeLinecap="round" />
+							<path d="M126.5 9H906.452C976.316 9 1026.7 75.9568 1007.34 143.087L821.99 786"
+								stroke="url(#paint2_linear_2131_1987)" strokeWidth={17} strokeLinecap="round" />
+						</g>
+						<defs>
+							<radialGradient id="paint0_diamond_2131_1987" cx="0" cy="0" r="1"
+								gradientUnits="userSpaceOnUse"
+								gradientTransform="translate(831.5 149) rotate(132.423) scale(1494.21 600.371)">
+								<stop stopColor="#7C5224" />
+								<stop offset="1" stopColor="#7C5224"  stopOpacity={0} />
+							</radialGradient>
+							<radialGradient id="paint1_diamond_2131_1987" cx="0" cy="0" r="1"
+								gradientUnits="userSpaceOnUse"
+								gradientTransform="translate(931.5 113.5) rotate(146.913) scale(909.481 805.574)">
+								<stop stopColor="#7C5224" />
+								<stop offset="1" stopColor="#7C5224"  stopOpacity={0} />
+							</radialGradient>
+							<linearGradient id="paint2_linear_2131_1987" x1="977" y1="40.5" x2="706" y2="241.5"
+								gradientUnits="userSpaceOnUse">
+								<stop stopColor="#7C5224" />
+								<stop offset="1" stopColor="#7C5224"  stopOpacity={0} />
+							</linearGradient>
+						</defs>
+					</svg>
+				</div>
+			</div>
+			
+		<div className="container">
+			<div className="testimonials_sec_title text_center">
+				<h2 className="h2_title">How We Made A Difference In Our Client's Lives...</h2>
+			</div>
+
+			<div className="swiper testimonials_slider">
+				<div className="swiper-wrapper">
+					<div className="swiper-slide">
+						<div className="testimonials_slide">
+							<div className="testimonials_Image">
+								<Image src="/image/image1.jpg" alt="Vinayak Ekbote"  width={314} height={314} />
+								<div class="testimonials_author_info for_mob">
+									<p>Vinayak Ekbote</p>
+									<h6>New Delhi</h6>
+								</div>
+							</div>
+							<div className="testimonials_content">
+								<div className="testimonials_author_info for_des">
+									<p>Vinayak Ekbote</p>
+									<h6>New Delhi</h6>
+								</div>
+								<p>It’s been an excellent association with him and his team at Ladder7 for the last 6 years and I have no hesitation in recommending him as your go-to person for all your Financial Planning needs.					
+								</p>
+							</div>
+						</div>
+					</div>
+					<div className="swiper-slide">
+						<div className="testimonials_slide">
+							<div className="testimonials_Image">
+								<Image src="/image/Mohan-laligam-211.jpg" alt="Dr.Laligam Mohan"  width={314} height={314}  />
+								<div class="testimonials_author_info for_mob">
+									<p>Dr.Laligam Mohan</p>
+									<h6>Chennai</h6>
+								</div>
+							</div>
+							<div className="testimonials_content">
+								<div className="testimonials_author_info for_des">
+									<p>Dr.Laligam Mohan</p>
+									<h6>Chennai</h6>
+								</div>
+								<p>
+								I do not know where I would have been without them. I thank Ladder7 Sage Counsel Advisors for taking charge of my life removing a significant area of stress for me.
+								</p>
+							</div>
+						</div>
+					</div>
+					<div className="swiper-slide">
+						<div className="testimonials_slide">
+							<div className="testimonials_Image">
+								<Image src="/image/Surendra-Ranganath2.jpg" alt="Surendra Ranganath"  width={314} height={314} />
+								<div class="testimonials_author_info for_mob">
+									<p>Surendra Ranganath</p>
+									<h6>Puducherry</h6>
+								</div>
+							</div>
+							<div className="testimonials_content">
+								<div className="testimonials_author_info for_des">
+									<p>Surendra Ranganath</p>
+									<h6>Puducherry</h6>
+								</div>
+								<p>	I can confidently share is that their advice puts the client first, and is free from any conflict of interest. I value the peace of mind (can a price be put on this?)	
+					
+								</p>
+							</div>
+						</div>
+					</div>
+					<div className="swiper-slide">
+						<div className="testimonials_slide">
+							<div className="testimonials_Image">
+								<Image src="/image/Syam-S4.jpg" alt="Syam S"  width={314} height={314}  />
+								<div class="testimonials_author_info for_mob">
+									<p>Syam S</p>
+									<h6>Navi Mumbai</h6>
+								</div>
+							</div>
+							<div className="testimonials_content">
+								<div className="testimonials_author_info for_des">
+									<p>Syam S</p>
+									<h6>Navi Mumbai</h6>
+								</div>
+								<p>
+								Life just changed once I placed that “trust” in Suresh. “It is not Timing the Market, It is Time in the Market" he keeps saying.
+								</p>
+							</div>
+						</div>
+					</div>
+					<div className="swiper-slide">
+						<div className="testimonials_slide">
+							<div className="testimonials_Image">
+								<Image src="/image/Bindhu_Unny5.jpg" alt="Bindhu &amp; Unny "  width={314} height={314} />
+								<div class="testimonials_author_info for_mob">
+									<p>Bindhu &amp; Unny </p>
+									<h6>Mumbai</h6>
+								</div>
+							</div>
+							<div className="testimonials_content">
+								<div className="testimonials_author_info for_des">
+									<p>Bindhu &amp; Unny </p>
+									<h6>Mumbai</h6>
+								</div>
+								<p>Other than the meticulous financial plan, what we love is the information that is regularly sent our way so that we remain up-to-date about the developments in the financial realm.					
+								</p>
+							</div>
+						</div>
+					</div>
+					<div className="swiper-slide">
+						<div className="testimonials_slide">
+							<div className="testimonials_Image">
+								<Image src="/image/Bhaskar-ganguly.jpg" alt="Bhaskar Ganguly"  width={314} height={314}  />
+								<div class="testimonials_author_info for_mob">
+									<p>Bhaskar Ganguly</p>
+									<h6>Navi Mumbai</h6>
+								</div>
+							</div>
+							<div className="testimonials_content">
+								<div className="testimonials_author_info for_des">
+									<p>Bhaskar Ganguly</p>
+									<h6>Navi Mumbai</h6>
+								</div>
+								<p>
+								After having gone to Mr Suresh Sadagopan, I have gained confidence that I will be able to meet my future goals in life. It has been a great association of 9 years. 
+								</p>
+							</div>
+						</div>
+					</div>
+					<div className="swiper-slide">
+						<div className="testimonials_slide">
+							<div className="testimonials_Image">
+								<Image src="/image/Vikas-Sehgal-photo.jpg" alt="Dr. Vikas Sehgal"  width={314} height={314} />
+								<div class="testimonials_author_info for_mob">
+									<p>Dr. Vikas Sehgal</p>
+									<h6>Ambala</h6>
+								</div>
+							</div>
+							<div className="testimonials_content">
+								<div className="testimonials_author_info for_des">
+									<p>Dr. Vikas Sehgal</p>
+									<h6>Ambala</h6>
+								</div>
+								<p>They clearly declare initially their fees / charges &amp; do not earn indirectly through commissions, which makes them client-centric &amp; conflict free. This makes their practice very ethical &amp; truly in client's best interests.					
+								</p>
+							</div>
+						</div>
+					</div>
+					<div className="swiper-slide">
+						<div className="testimonials_slide">
+							<div className="testimonials_Image">
+								<Image src="/image/Ramachandran-K-photo1.jpg" alt="Ramachandran K"  width={314} height={314}  />
+								<div class="testimonials_author_info for_mob">
+									<p>Ramachandran K</p>
+									<h6>Chennai</h6>
+								</div>
+							</div>
+							<div className="testimonials_content">
+								<div className="testimonials_author_info for_des">
+									<p>Ramachandran K</p>
+									<h6>Chennai</h6>
+								</div>
+								<p>
+								My experience with Ladder 7 - was equivalent  to undergoing a thorough medical check-up. The kind of information sought , discussed and documented is a good assessment  of my financial health.
+								</p>
+							</div>
+						</div>
+					</div>
+					<div className="swiper-slide">
+						<div className="testimonials_slide">
+							<div className="testimonials_Image">
+								<Image src="/image/Mahesh-vala-photo3.jpg" alt="Mahesh Vala"  width={314} height={314} />
+								<div class="testimonials_author_info for_mob">
+									<p>Mahesh Vala</p>
+									<h6>Babrala</h6>
+								</div>
+							</div>
+							<div className="testimonials_content">
+								<div className="testimonials_author_info for_des">
+									<p>Mahesh Vala</p>
+									<h6>Babrala</h6>
+								</div>
+								<p>Mr Suresh and his team deliver truly professional financial planning services and put their clients’ interests first – I’d happily recommend LADDER7 to anyone wanting a holistic personalised financial planning service.					
+								</p>
+							</div>
+						</div>
+					</div>
+					<div className="swiper-slide">
+						<div className="testimonials_slide">
+							<div className="testimonials_Image">
+								<Image src="/image/Abhishek_023.jpg" alt="Abhishek Dwivedi"  width={314} height={314}  />
+								<div class="testimonials_author_info for_mob">
+									<p>Abhishek Dwivedi</p>
+									<h6>Navi Mumbai</h6>
+								</div>
+							</div>
+							<div className="testimonials_content">
+								<div className="testimonials_author_info for_des">
+									<p>Abhishek Dwivedi</p>
+									<h6>Navi Mumbai</h6>
+								</div>
+								<p>
+								There are instances, where they are able to do changes as well cater to my requests with very effective responsiveness and don’t force options on you.	
+								</p>
+							</div>
+						</div>
+					</div>
+					<div className="swiper-slide">
+						<div className="testimonials_slide">
+							<div className="testimonials_Image">
+								<Image src="/image/Durbar-mukherjee4.jpg" alt="Durbar Mukherjee"  width={314} height={314} />
+								<div class="testimonials_author_info for_mob">
+									<p>Durbar Mukherjee</p>
+									<h6>Puducherry</h6>
+								</div>
+							</div>
+							<div className="testimonials_content">
+								<div className="testimonials_author_info for_des">
+									<p>Durbar Mukherjee</p>
+									<h6>Puducherry</h6>
+								</div>
+								<p>	I look forward to continuing the association and to avail their expertise in future too. I recommend Ladder 7 to anyone who wants to seek expert advice on personal finance &amp; financial planning in India.	
+					
+								</p>
+							</div>
+						</div>
+					</div>
+					<div className="swiper-slide">
+						<div className="testimonials_slide">
+							<div className="testimonials_Image">
+								<Image src="/image/Ranjalkars.jpg" alt="Prakash &amp; Madhuri Ranjalkar"  width={314} height={314}  />
+								<div class="testimonials_author_info for_mob">
+									<p>Prakash &amp; Madhuri Ranjalkar</p>
+									<h6>Mumbai/Myanmar</h6>
+								</div>
+							</div>
+							<div className="testimonials_content">
+								<div className="testimonials_author_info for_des">
+									<p>Prakash &amp; Madhuri Ranjalkar</p>
+									<h6>Mumbai/Myanmar</h6>
+								</div>
+								<p>
+								Their periodic review of our financial-health and life-goals has been holistic and informative. The plan arising out of it has always been practical and implementable.
+								</p>
+							</div>
+						</div>
+					</div>
+					<div className="swiper-slide">
+						<div className="testimonials_slide">
+							<div className="testimonials_Image">
+								<Image src="/image/Manoj-n-Sunita15.jpg" alt="Manoj &amp; Sunita"  width={314} height={314} />
+								<div class="testimonials_author_info for_mob">
+									<p>Manoj &amp; Sunita</p>
+									<h6>Mumbai</h6>
+								</div>
+							</div>
+							<div className="testimonials_content">
+								<div className="testimonials_author_info for_des">
+									<p>Manoj &amp; Sunita</p>
+									<h6>Mumbai</h6>
+								</div>
+								<p>Suresh brought a lot of professional experience, ethics, integrity and customer oriented approach in all our interactions and it is a great pleasure to deal with him and his firm.				
+								</p>
+							</div>
+						</div>
+					</div>
+					<div className="swiper-slide">
+						<div className="testimonials_slide">
+							<div className="testimonials_Image">
+								<Image src="/image/WI6.jpg" alt="Kumarjit Bhattacharjee"  width={314} height={314}  />
+								<div class="testimonials_author_info for_mob">
+									<p>Kumarjit Bhattacharjee</p>
+									<h6>Pune</h6>
+								</div>
+							</div>
+							<div className="testimonials_content">
+								<div className="testimonials_author_info for_des">
+									<p>Kumarjit Bhattacharjee</p>
+									<h6>Pune</h6>
+								</div>
+								<p>
+								From the first meeting, we got the impression that we are partnering with a competent and capable team of professionals.  
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div className="swiper_button">
+					<button className="swiper-button-prev">
+						<Image src="/image/black_right_arrow.svg"  width={16}
+												height={16} />
+					</button>
+					<button className="swiper-button-next">
+						<Image src="/image/black_right_arrow.svg"  width={16}
+												height={16} />
+					</button>
+				</div>
 			</div>
 		</div>
 	</section>
